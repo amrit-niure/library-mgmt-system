@@ -1,0 +1,320 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Add some top margin to account for fixed navbar -->
+<div style="margin-top: 80px;">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Navigation</span>
+                    </h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cover-page">
+                                <i class="fa fa-file-text"></i> Cover Page
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#content-page">
+                                <i class="fa fa-list"></i> Content Page
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#background">
+                                <i class="fa fa-info-circle"></i> Background
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aims-and-scope">
+                                <i class="fa fa-target"></i> Aims and Scope
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#requirements">
+                                <i class="fa fa-check-square"></i> Requirements
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#agile-testing">
+                                <i class="fa fa-cogs"></i> Agile Testing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conclusion">
+                                <i class="fa fa-flag-checkered"></i> Conclusion
+                            </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="px-3">
+                        <a href="/dashboard/" class="btn btn-primary btn-sm">
+                            <i class="fa fa-arrow-left"></i> Back to Dashboard
+                        </a>
+                        <a href="/" class="btn btn-secondary btn-sm mt-2">
+                            <i class="fa fa-home"></i> Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <main role="main" class="col-md-9 ml-sm-auto px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">{{ title }}</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.print()">
+                                <i class="fa fa-print"></i> Print
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Plan Content from README.md -->
+                <div class="project-plan-content">
+                    {{ html_content|safe }}
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Custom styles for project plan */
+.sidebar {
+    position: sticky;
+    top: 80px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: 100%;
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin: 0.1rem 0.5rem;
+}
+
+.sidebar .nav-link:hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+    text-decoration: none;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.project-plan-content {
+    line-height: 1.6;
+    color: #333;
+    padding: 0 15px;
+}
+
+.project-plan-content h1 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.project-plan-content h2 {
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.project-plan-content h3 {
+    color: #2980b9;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.project-plan-content h4 {
+    color: #8e44ad;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-plan-content h5 {
+    color: #e67e22;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.project-plan-content h6 {
+    color: #95a5a6;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.project-plan-content ul, .project-plan-content ol {
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.project-plan-content li {
+    margin-bottom: 5px;
+}
+
+.project-plan-content pre {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+.project-plan-content code {
+    background-color: #f8f9fa;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #e83e8c;
+}
+
+.project-plan-content blockquote {
+    border-left: 4px solid #3498db;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    font-style: italic;
+}
+
+.project-plan-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: white;
+}
+
+.project-plan-content table th,
+.project-plan-content table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.project-plan-content table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.project-plan-content table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.project-plan-content strong {
+    color: #2c3e50;
+}
+
+.project-plan-content em {
+    color: #7f8c8d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .col-md-9 {
+        margin-left: 0;
+    }
+}
+
+/* Print styles */
+@media print {
+    .sidebar {
+        display: none;
+    }
+    
+    .col-md-9 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    
+    .btn-toolbar {
+        display: none;
+    }
+    
+    .project-plan-content {
+        font-size: 12px;
+    }
+}
+</style>
+
+<script>
+// Smooth scrolling for navigation links
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.sidebar .nav-link');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remove active class from all links
+            navLinks.forEach(l => l.classList.remove('active'));
+            
+            // Add active class to clicked link
+            this.classList.add('active');
+            
+            // Get target element
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                // Account for fixed navbar
+                const offsetTop = targetElement.offsetTop - 100;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Highlight current section on scroll
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('h2[id], h1[id]');
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 150) {
+                currentSection = section.id;
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + currentSection) {
+                link.classList.add('active');
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
