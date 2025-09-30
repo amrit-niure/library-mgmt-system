@@ -1,0 +1,11 @@
+[project]
+name = "software-engineering-process-and-tools"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django>=5.2.5",
+    "markdown>=3.8.2",
+    "pillow>=11.3.0",
+]
