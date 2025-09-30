@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-01T00:23:02.286003" rpa="false" schemaversion="5">
+<suite id="s1" name="SimpleLoginTest" source="C:\Users\apply\Desktop\Software Engineering Process and Tools\Robot\SimpleLoginTest.robot">
+<kw name="Go to Website" owner="LoginRegistrationTest" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:02.790317" level="INFO">Opening browser 'Edge' to base url 'http://localhost:8000'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-01T00:23:02.789909" elapsed="2.365597"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-10-01T00:23:05.156103" elapsed="0.000664"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-01T00:23:05.157061" elapsed="0.278644"/>
+</kw>
+<doc>Open browser and go to website</doc>
+<status status="PASS" start="2025-10-01T00:23:02.788598" elapsed="2.647334"/>
+</kw>
+<test id="s1-t1" name="Test Staff Registration" line="10">
+<kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:05.438440" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<arg>${URL}/staffsignup/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-10-01T00:23:05.438091" elapsed="0.279295"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:06.141643" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<arg>STAFF SIGNUP</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-01T00:23:05.717730" elapsed="0.424176"/>
+</kw>
+<doc>Navigate to staff signup page</doc>
+<status status="PASS" start="2025-10-01T00:23:05.437414" elapsed="0.704703"/>
+</kw>
+<kw name="Register New User" owner="LoginRegistrationTest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=uname</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-01T00:23:06.143299" elapsed="0.429188"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:06.573128" level="INFO">Typing text 'testone' into text field 'name=uname'.</msg>
+<arg>name=uname</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:06.572765" elapsed="0.792364"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:07.366148" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<arg>name=fname</arg>
+<arg>Test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:07.365562" elapsed="0.757275"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:08.123669" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<arg>name=lname</arg>
+<arg>User</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:08.123288" elapsed="0.740384"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:08.864399" level="INFO">Typing text 'testone@example.com' into text field 'name=email'.</msg>
+<arg>name=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:08.863990" elapsed="0.728593"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:09.593388" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<arg>name=phone</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:09.592985" elapsed="0.698636"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:10.292514" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:10.292037" elapsed="0.705597"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:10.998426" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<arg>xpath=//input[@value='Create']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:10.998039" elapsed="1.736786"/>
+</kw>
+<doc>Fill and submit registration form</doc>
+<status status="PASS" start="2025-10-01T00:23:06.142795" elapsed="6.592296"/>
+</kw>
+<kw name="Verify Registration Success" owner="LoginRegistrationTest">
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>stafflogin</arg>
+<arg>timeout=8s</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-10-01T00:23:12.736387" elapsed="0.206417"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Staff Login</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-01T00:23:12.943083" elapsed="0.214187"/>
+</kw>
+<doc>Check for registration success by verifying redirect to login page</doc>
+<status status="PASS" start="2025-10-01T00:23:12.735708" elapsed="0.421741"/>
+</kw>
+<doc>Test new user registration</doc>
+<status status="PASS" start="2025-10-01T00:23:05.436107" elapsed="7.721708"/>
+</test>
+<test id="s1-t2" name="Test Staff Login" line="16">
+<kw name="Go To Staff Login Page" owner="LoginRegistrationTest">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:13.159736" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
+<arg>${URL}/stafflogin/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-10-01T00:23:13.159534" elapsed="0.257039"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:13.830901" level="INFO">Current page contains text 'Staff Login'.</msg>
+<arg>Staff Login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-01T00:23:13.416975" elapsed="0.414135"/>
+</kw>
+<doc>Navigate to staff login page</doc>
+<status status="PASS" start="2025-10-01T00:23:13.159194" elapsed="0.672117"/>
+</kw>
+<kw name="Login With Credentials" owner="LoginRegistrationTest">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=loginuname</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-01T00:23:13.832279" elapsed="0.423728"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name=loginuname</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:14.256603" elapsed="0.434895"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:14.692122" level="INFO">Typing text 'testone' into text field 'name=loginuname'.</msg>
+<arg>name=loginuname</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:14.691769" elapsed="0.690102"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>name=loginpassword</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:15.382271" elapsed="0.438202"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:15.821966" level="INFO">Typing text 'testpass123' into text field 'name=loginpassword'.</msg>
+<arg>name=loginpassword</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:15.821377" elapsed="0.693054"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-01T00:23:16.515229" level="INFO">Clicking button 'xpath=//input[@value='Login']'.</msg>
+<arg>xpath=//input[@value='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-01T00:23:16.514836" elapsed="1.953779"/>
+</kw>
+<doc>Enter login credentials and submit</doc>
+<status status="PASS" start="2025-10-01T00:23:13.831870" elapsed="4.637000"/>
+</kw>
+<kw name="Verify Login Success" owner="LoginRegistrationTest">
+<kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<arg>dashboard</arg>
+<arg>timeout=8s</arg>
+<doc>Waits until the current URL contains ``expected``.</doc>
+<status status="PASS" start="2025-10-01T00:23:18.470066" elapsed="0.205859"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-10-01T00:23:18.676233" elapsed="0.213923"/>
+</kw>
+<doc>Check if login was successful</doc>
+<status status="PASS" start="2025-10-01T00:23:18.469467" elapsed="0.420954"/>
+</kw>
+<doc>Test user login with registered credentials</doc>
+<status status="PASS" start="2025-10-01T00:23:13.158560" elapsed="5.732388"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-01T00:23:18.892430" elapsed="2.385897"/>
+</kw>
+<doc>Simple test suite for Django Library Management System signup and login only</doc>
+<status status="PASS" start="2025-10-01T00:23:02.288197" elapsed="18.990319"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="SimpleLoginTest" id="s1" pass="2" fail="0" skip="0">SimpleLoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
