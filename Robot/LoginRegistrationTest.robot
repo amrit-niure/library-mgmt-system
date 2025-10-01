@@ -1,14 +1,14 @@
 *** Settings ***
-Documentation    Simple resource file for basic login/registration testing
+Documentation    Login and Registration Tests by Amrit Niure (s396426)
 
 Library          SeleniumLibrary
 
 *** Variables ***
 ${URL}              http://localhost:8000
 ${BROWSER}          Edge
-${USERNAME}         testone
+${USERNAME}         uniquetestuser
 ${PASSWORD}         testpass123
-${EMAIL}            testone@example.com
+${EMAIL}            uniquetestuser@example.com
 
 *** Keywords ***
 Go to Website

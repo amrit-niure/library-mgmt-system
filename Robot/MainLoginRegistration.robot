@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Simple test suite for Django Library Management System signup and login only
+Documentation    (s396426 Amrit Niure) Automated Test for Login and Registration Functionality 
 Library          SeleniumLibrary
 
 Resource         LoginRegistrationTest.robot
