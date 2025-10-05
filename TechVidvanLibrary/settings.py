@@ -27,6 +27,20 @@ DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'
 
 ALLOWED_HOSTS = ['*']  # Simple config for Railway
 
+# CSRF Configuration
+CSRF_TRUSTED_ORIGINS = [
+    'https://librarymgmt.amritniure.com.np',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+]
+
+# Additional security settings for production
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_SECURE = True
+
 
 # Application definition
 
