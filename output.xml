@@ -1,222 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-18T15:10:48.561462" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-10-19T14:54:40.418556" rpa="false" schemaversion="5">
 <suite id="s1" name="MainLoginRegistration" source="C:\Users\apply\Desktop\Software Engineering Process and Tools\Robot\MainLoginRegistration.robot">
 <kw name="Go to Website" owner="LoginRegistrationTest" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:49.047302" level="INFO">Opening browser 'Edge' to base url 'http://localhost:8000'.</msg>
+<msg time="2025-10-19T14:54:40.917737" level="INFO">Opening browser 'Edge' to base url 'http://localhost:8000'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:10:49.046825" elapsed="2.433830"/>
+<status status="PASS" start="2025-10-19T14:54:40.917396" elapsed="2.628016"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-18T15:10:51.480991" elapsed="0.040567"/>
+<status status="PASS" start="2025-10-19T14:54:43.545823" elapsed="0.040763"/>
 </kw>
 <doc>Open browser and go to website</doc>
-<status status="PASS" start="2025-10-18T15:10:49.045438" elapsed="2.476332"/>
+<status status="PASS" start="2025-10-19T14:54:40.916354" elapsed="2.670402"/>
 </kw>
 <test id="s1-t1" name="Test Staff Registration" line="10">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:51.524415" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:54:43.589049" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:10:51.524022" elapsed="0.033399"/>
+<status status="PASS" start="2025-10-19T14:54:43.588668" elapsed="0.116743"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:51.628206" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:54:43.732609" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:10:51.557768" elapsed="0.070597"/>
+<status status="PASS" start="2025-10-19T14:54:43.705884" elapsed="0.026889"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:10:51.523239" elapsed="0.105295"/>
+<status status="PASS" start="2025-10-19T14:54:43.587991" elapsed="0.144964"/>
 </kw>
 <kw name="Register New User" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:10:51.629554" elapsed="0.034841"/>
+<status status="PASS" start="2025-10-19T14:54:43.733981" elapsed="0.036188"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:51.665235" level="INFO">Typing text 'fslkfjksl' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:54:43.771349" level="INFO">Typing text 'fslkfjksl' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:51.664744" elapsed="0.152915"/>
+<status status="PASS" start="2025-10-19T14:54:43.770658" elapsed="0.162324"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:51.818468" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:54:43.933735" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:51.817984" elapsed="0.115407"/>
+<status status="PASS" start="2025-10-19T14:54:43.933308" elapsed="0.109607"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:51.934348" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:54:44.043571" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:51.933799" elapsed="0.099900"/>
+<status status="PASS" start="2025-10-19T14:54:44.043195" elapsed="0.102089"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:52.034593" level="INFO">Typing text 'fslkfjksl@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:54:44.145998" level="INFO">Typing text 'fslkfjksl@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:52.034049" elapsed="0.122728"/>
+<status status="PASS" start="2025-10-19T14:54:44.145603" elapsed="0.142572"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:52.157452" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:54:44.289353" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:52.157085" elapsed="0.108425"/>
+<status status="PASS" start="2025-10-19T14:54:44.288695" elapsed="0.107356"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:52.266045" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:54:44.396783" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:52.265730" elapsed="0.110873"/>
+<status status="PASS" start="2025-10-19T14:54:44.396275" elapsed="0.110391"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:52.377271" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:54:44.507257" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:52.376910" elapsed="1.057159"/>
+<status status="PASS" start="2025-10-19T14:54:44.506941" elapsed="0.152152"/>
 </kw>
 <doc>Fill and submit registration form</doc>
-<status status="PASS" start="2025-10-18T15:10:51.629103" elapsed="1.805115"/>
+<status status="PASS" start="2025-10-19T14:54:43.733492" elapsed="0.925888"/>
 </kw>
 <kw name="Verify Registration Success" owner="LoginRegistrationTest">
 <kw name="Wait Until Location Contains" owner="SeleniumLibrary">
+<msg time="2025-10-19T14:54:53.219289" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:54:53.219620" level="FAIL">Location did not contain 'stafflogin' in 8 seconds.</msg>
 <arg>stafflogin</arg>
 <arg>timeout=8s</arg>
 <doc>Waits until the current URL contains ``expected``.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.435546" elapsed="0.010040"/>
+<status status="FAIL" start="2025-10-19T14:54:44.660601" elapsed="8.563646">Location did not contain 'stafflogin' in 8 seconds.</status>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Staff Login</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.445830" elapsed="0.015731"/>
+<status status="NOT RUN" start="2025-10-19T14:54:53.224723" elapsed="0.000145"/>
 </kw>
 <doc>Check for registration success by verifying redirect to login page</doc>
-<status status="PASS" start="2025-10-18T15:10:53.434837" elapsed="0.026896"/>
+<status status="FAIL" start="2025-10-19T14:54:44.660008" elapsed="8.565268">Location did not contain 'stafflogin' in 8 seconds.</status>
 </kw>
 <doc>Test new user registration with valid data</doc>
-<status status="PASS" start="2025-10-18T15:10:51.521920" elapsed="1.940202"/>
+<status status="FAIL" start="2025-10-19T14:54:43.586875" elapsed="9.638885">Location did not contain 'stafflogin' in 8 seconds.</status>
 </test>
 <test id="s1-t2" name="Test Staff Login" line="16">
 <kw name="Go To Staff Login Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:53.464011" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
+<msg time="2025-10-19T14:54:53.227576" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
 <arg>${URL}/stafflogin/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.463802" elapsed="0.046971"/>
+<status status="PASS" start="2025-10-19T14:54:53.227368" elapsed="0.076577"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:53.524060" level="INFO">Current page contains text 'Staff Login'.</msg>
+<msg time="2025-10-19T14:54:53.326408" level="INFO">Current page contains text 'Staff Login'.</msg>
 <arg>Staff Login</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.511216" elapsed="0.012965"/>
+<status status="PASS" start="2025-10-19T14:54:53.304380" elapsed="0.022180"/>
 </kw>
 <doc>Navigate to staff login page</doc>
-<status status="PASS" start="2025-10-18T15:10:53.463454" elapsed="0.060849"/>
+<status status="PASS" start="2025-10-19T14:54:53.227012" elapsed="0.099704"/>
 </kw>
 <kw name="Login With Credentials" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=loginuname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.525089" elapsed="0.020920"/>
+<status status="PASS" start="2025-10-19T14:54:53.327943" elapsed="0.024280"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>name=loginuname</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.546257" elapsed="0.033683"/>
+<status status="PASS" start="2025-10-19T14:54:53.352476" elapsed="0.038926"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:53.580468" level="INFO">Typing text 'fslkfjksl' into text field 'name=loginuname'.</msg>
+<msg time="2025-10-19T14:54:53.392190" level="INFO">Typing text 'fslkfjksl' into text field 'name=loginuname'.</msg>
 <arg>name=loginuname</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.580165" elapsed="0.087944"/>
+<status status="PASS" start="2025-10-19T14:54:53.391736" elapsed="0.097289"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>name=loginpassword</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.668342" elapsed="0.039758"/>
+<status status="PASS" start="2025-10-19T14:54:53.489985" elapsed="0.043369"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:53.708624" level="INFO">Typing text 'testpass123' into text field 'name=loginpassword'.</msg>
+<msg time="2025-10-19T14:54:53.534028" level="INFO">Typing text 'testpass123' into text field 'name=loginpassword'.</msg>
 <arg>name=loginpassword</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.708319" elapsed="0.087089"/>
+<status status="PASS" start="2025-10-19T14:54:53.533630" elapsed="0.107128"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:53.795977" level="INFO">Clicking button 'xpath=//input[@value='Login']'.</msg>
+<msg time="2025-10-19T14:54:53.641551" level="INFO">Clicking button 'xpath=//input[@value='Login']'.</msg>
 <arg>xpath=//input[@value='Login']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:53.795672" elapsed="1.253279"/>
+<status status="PASS" start="2025-10-19T14:54:53.641138" elapsed="1.345492"/>
 </kw>
 <doc>Enter login credentials and submit</doc>
-<status status="PASS" start="2025-10-18T15:10:53.524740" elapsed="1.524352"/>
+<status status="PASS" start="2025-10-19T14:54:53.327392" elapsed="1.659410"/>
 </kw>
 <kw name="Verify Login Success" owner="LoginRegistrationTest">
 <kw name="Wait Until Location Contains" owner="SeleniumLibrary">
 <arg>dashboard</arg>
 <arg>timeout=8s</arg>
 <doc>Waits until the current URL contains ``expected``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.050304" elapsed="0.005575"/>
+<status status="PASS" start="2025-10-19T14:54:54.987758" elapsed="0.012966"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Dashboard</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.056268" elapsed="0.019894"/>
+<status status="PASS" start="2025-10-19T14:54:55.001061" elapsed="0.015388"/>
 </kw>
 <doc>Check if login was successful</doc>
-<status status="PASS" start="2025-10-18T15:10:55.049749" elapsed="0.026655"/>
+<status status="PASS" start="2025-10-19T14:54:54.987320" elapsed="0.029316"/>
 </kw>
 <doc>Test user login with registered credentials</doc>
-<status status="PASS" start="2025-10-18T15:10:53.462790" elapsed="1.614299"/>
+<status status="PASS" start="2025-10-19T14:54:53.226377" elapsed="1.790670"/>
 </test>
 <test id="s1-t3" name="Test Registration With Empty Username" line="23">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:55.080088" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:54:55.018880" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.079881" elapsed="0.069498"/>
+<status status="PASS" start="2025-10-19T14:54:55.018695" elapsed="0.079413"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:55.167592" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:54:55.118339" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.149726" elapsed="0.018026"/>
+<status status="PASS" start="2025-10-19T14:54:55.098470" elapsed="0.020010"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:10:55.079528" elapsed="0.088381"/>
+<status status="PASS" start="2025-10-19T14:54:55.018358" elapsed="0.100265"/>
 </kw>
 <kw name="Register User With Empty Field" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.168904" elapsed="0.016789"/>
+<status status="PASS" start="2025-10-19T14:54:55.119622" elapsed="0.017459"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:55.187880" level="INFO">Typing text '' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:54:55.138746" level="INFO">Typing text '' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>${EMPTY}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.186872" elapsed="0.077678"/>
+<status status="PASS" start="2025-10-19T14:54:55.137817" elapsed="0.089596"/>
 </kw>
 <arg>'${field_type}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -227,29 +229,29 @@
 <arg>name=uname</arg>
 <arg>testuser_empty</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.186152" elapsed="0.078529"/>
+<status status="PASS" start="2025-10-19T14:54:55.137374" elapsed="0.090208"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:55.265216" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:54:55.228162" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.264920" elapsed="0.088972"/>
+<status status="PASS" start="2025-10-19T14:54:55.227847" elapsed="0.102097"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:55.354690" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:54:55.330779" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.354233" elapsed="0.127926"/>
+<status status="PASS" start="2025-10-19T14:54:55.330306" elapsed="0.122812"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:55.483647" level="INFO">Typing text 'test_empty@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:54:55.454445" level="INFO">Typing text 'test_empty@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>test_empty@example.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.483225" elapsed="0.136827"/>
+<status status="PASS" start="2025-10-19T14:54:55.454081" elapsed="0.142006"/>
 </kw>
 <arg>'${field_type}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -260,22 +262,22 @@
 <arg>name=email</arg>
 <arg>test_empty@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.482561" elapsed="0.137629"/>
+<status status="PASS" start="2025-10-19T14:54:55.453482" elapsed="0.142754"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:55.620660" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:54:55.596821" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.620393" elapsed="0.111805"/>
+<status status="PASS" start="2025-10-19T14:54:55.596465" elapsed="0.104373"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:55.733282" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:54:55.701956" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.732974" elapsed="0.118754"/>
+<status status="PASS" start="2025-10-19T14:54:55.701642" elapsed="0.132267"/>
 </kw>
 <arg>'${field_type}' == 'password'</arg>
 <arg>Input Text</arg>
@@ -286,86 +288,86 @@
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.732523" elapsed="0.119333"/>
+<status status="PASS" start="2025-10-19T14:54:55.701160" elapsed="0.132902"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:55.852295" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:54:55.834618" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.852059" elapsed="0.085069"/>
+<status status="PASS" start="2025-10-19T14:54:55.834301" elapsed="0.089405"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:10:56.937698" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:54:56.925154" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:10:55.937344" elapsed="1.000512"/>
+<status status="PASS" start="2025-10-19T14:54:55.924061" elapsed="1.001414"/>
 </kw>
 <arg>username</arg>
 <doc>Register with one empty field</doc>
-<status status="PASS" start="2025-10-18T15:10:55.168414" elapsed="1.769595"/>
+<status status="PASS" start="2025-10-19T14:54:55.119195" elapsed="1.806617"/>
 </kw>
 <kw name="Verify Registration Fails" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:57.454883" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_1.png"&gt;&lt;img src="registration_failure_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:54:57.392599" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_1.png"&gt;&lt;img src="registration_failure_1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_failure_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:10:56.938997" elapsed="0.516051"/>
+<status status="PASS" start="2025-10-19T14:54:56.927347" elapsed="0.465485"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:57.462238" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:54:57.401739" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.455274" elapsed="0.007045"/>
+<status status="PASS" start="2025-10-19T14:54:57.393437" elapsed="0.008369"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>dashboard</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.462579" elapsed="0.000294"/>
+<status status="PASS" start="2025-10-19T14:54:57.401994" elapsed="0.000209"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>stafflogin</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.463315" elapsed="0.000290"/>
+<status status="PASS" start="2025-10-19T14:54:57.402325" elapsed="0.000157"/>
 </kw>
 <doc>Verify that registration did not succeed and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:10:56.938519" elapsed="0.525244"/>
+<status status="PASS" start="2025-10-19T14:54:56.926876" elapsed="0.475695"/>
 </kw>
 <doc>Test registration with empty username field</doc>
-<status status="PASS" start="2025-10-18T15:10:55.078097" elapsed="2.386046"/>
+<status status="PASS" start="2025-10-19T14:54:55.017667" elapsed="2.385193"/>
 </test>
 <test id="s1-t4" name="Test Registration With Empty Email" line="29">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:57.465990" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:54:57.404718" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.465797" elapsed="0.062747"/>
+<status status="PASS" start="2025-10-19T14:54:57.404519" elapsed="0.068087"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:57.546256" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:54:57.492348" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.528914" elapsed="0.017511"/>
+<status status="PASS" start="2025-10-19T14:54:57.472889" elapsed="0.019606"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:10:57.465460" elapsed="0.081131"/>
+<status status="PASS" start="2025-10-19T14:54:57.404143" elapsed="0.088511"/>
 </kw>
 <kw name="Register User With Empty Field" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.547777" elapsed="0.023028"/>
+<status status="PASS" start="2025-10-19T14:54:57.493731" elapsed="0.017264"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:57.571913" level="INFO">Typing text 'testuser_empty' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:54:57.511864" level="INFO">Typing text 'testuser_empty' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>testuser_empty</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.571599" elapsed="0.105375"/>
+<status status="PASS" start="2025-10-19T14:54:57.511624" elapsed="0.109063"/>
 </kw>
 <arg>'${field_type}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -376,29 +378,29 @@
 <arg>name=uname</arg>
 <arg>testuser_empty</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.571113" elapsed="0.106073"/>
+<status status="PASS" start="2025-10-19T14:54:57.511254" elapsed="0.109599"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:57.677882" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:54:57.621463" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.677483" elapsed="0.100899"/>
+<status status="PASS" start="2025-10-19T14:54:57.621118" elapsed="0.092939"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:57.778980" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:54:57.714719" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.778660" elapsed="0.108936"/>
+<status status="PASS" start="2025-10-19T14:54:57.714367" elapsed="0.129503"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:57.889655" level="INFO">Typing text '' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:54:57.845546" level="INFO">Typing text '' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMPTY}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.888682" elapsed="0.094536"/>
+<status status="PASS" start="2025-10-19T14:54:57.844854" elapsed="0.108383"/>
 </kw>
 <arg>'${field_type}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -409,22 +411,22 @@
 <arg>name=email</arg>
 <arg>test_empty@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.887995" elapsed="0.095469"/>
+<status status="PASS" start="2025-10-19T14:54:57.844293" elapsed="0.109152"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:57.984391" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:54:57.954108" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:57.983945" elapsed="0.102864"/>
+<status status="PASS" start="2025-10-19T14:54:57.953757" elapsed="0.125658"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:58.088150" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:54:58.080616" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:58.087704" elapsed="0.118674"/>
+<status status="PASS" start="2025-10-19T14:54:58.080277" elapsed="0.124750"/>
 </kw>
 <arg>'${field_type}' == 'password'</arg>
 <arg>Input Text</arg>
@@ -435,86 +437,86 @@
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:10:58.087125" elapsed="0.119404"/>
+<status status="PASS" start="2025-10-19T14:54:58.079738" elapsed="0.125418"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:58.207037" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:54:58.205629" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:10:58.206766" elapsed="0.095838"/>
+<status status="PASS" start="2025-10-19T14:54:58.205359" elapsed="0.080489"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:10:59.303415" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:54:59.286521" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:10:58.302894" elapsed="1.000775"/>
+<status status="PASS" start="2025-10-19T14:54:58.286113" elapsed="1.000530"/>
 </kw>
 <arg>email</arg>
 <doc>Register with one empty field</doc>
-<status status="PASS" start="2025-10-18T15:10:57.547181" elapsed="1.756705"/>
+<status status="PASS" start="2025-10-19T14:54:57.493245" elapsed="1.793551"/>
 </kw>
 <kw name="Verify Registration Fails" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:59.879394" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_2.png"&gt;&lt;img src="registration_failure_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:54:59.738933" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_2.png"&gt;&lt;img src="registration_failure_2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_failure_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:10:59.306637" elapsed="0.572954"/>
+<status status="PASS" start="2025-10-19T14:54:59.287728" elapsed="0.451358"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:59.885668" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:54:59.747301" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:10:59.879928" elapsed="0.005815"/>
+<status status="PASS" start="2025-10-19T14:54:59.739317" elapsed="0.008058"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>dashboard</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:10:59.886001" elapsed="0.000336"/>
+<status status="PASS" start="2025-10-19T14:54:59.747674" elapsed="0.000341"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>stafflogin</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:10:59.886577" elapsed="0.000288"/>
+<status status="PASS" start="2025-10-19T14:54:59.748350" elapsed="0.000304"/>
 </kw>
 <doc>Verify that registration did not succeed and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:10:59.304978" elapsed="0.582023"/>
+<status status="PASS" start="2025-10-19T14:54:59.287315" elapsed="0.461501"/>
 </kw>
 <doc>Test registration with empty email field</doc>
-<status status="PASS" start="2025-10-18T15:10:57.464774" elapsed="2.422643"/>
+<status status="PASS" start="2025-10-19T14:54:57.403447" elapsed="2.345936"/>
 </test>
 <test id="s1-t5" name="Test Registration With Empty Password" line="35">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:59.890423" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:54:59.751189" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:10:59.890119" elapsed="0.055289"/>
+<status status="PASS" start="2025-10-19T14:54:59.751014" elapsed="0.063719"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:10:59.992206" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:54:59.828842" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:10:59.945874" elapsed="0.046581"/>
+<status status="PASS" start="2025-10-19T14:54:59.815054" elapsed="0.013932"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:10:59.889448" elapsed="0.103271"/>
+<status status="PASS" start="2025-10-19T14:54:59.750650" elapsed="0.078503"/>
 </kw>
 <kw name="Register User With Empty Field" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:10:59.994346" elapsed="0.022637"/>
+<status status="PASS" start="2025-10-19T14:54:59.830351" elapsed="0.019196"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:00.018347" level="INFO">Typing text 'testuser_empty' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:54:59.850683" level="INFO">Typing text 'testuser_empty' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>testuser_empty</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.017901" elapsed="0.130280"/>
+<status status="PASS" start="2025-10-19T14:54:59.850358" elapsed="0.116410"/>
 </kw>
 <arg>'${field_type}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -525,29 +527,29 @@
 <arg>name=uname</arg>
 <arg>testuser_empty</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.017328" elapsed="0.131080"/>
+<status status="PASS" start="2025-10-19T14:54:59.849861" elapsed="0.117062"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:00.149075" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:54:59.967453" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.148698" elapsed="0.171898"/>
+<status status="PASS" start="2025-10-19T14:54:59.967162" elapsed="0.095083"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:00.321363" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:00.062847" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.320940" elapsed="0.218280"/>
+<status status="PASS" start="2025-10-19T14:55:00.062524" elapsed="0.121798"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:00.540585" level="INFO">Typing text 'test_empty@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:00.185312" level="INFO">Typing text 'test_empty@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>test_empty@example.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.540208" elapsed="0.144674"/>
+<status status="PASS" start="2025-10-19T14:55:00.185052" elapsed="0.142884"/>
 </kw>
 <arg>'${field_type}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -558,22 +560,22 @@
 <arg>name=email</arg>
 <arg>test_empty@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.539553" elapsed="0.145536"/>
+<status status="PASS" start="2025-10-19T14:55:00.184617" elapsed="0.143512"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:00.685883" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:00.328880" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.685420" elapsed="0.120727"/>
+<status status="PASS" start="2025-10-19T14:55:00.328446" elapsed="0.112133"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:00.808047" level="INFO">Typing text '' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:00.442507" level="INFO">Typing text '' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>${EMPTY}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.807057" elapsed="0.114685"/>
+<status status="PASS" start="2025-10-19T14:55:00.441463" elapsed="0.103732"/>
 </kw>
 <arg>'${field_type}' == 'password'</arg>
 <arg>Input Text</arg>
@@ -584,176 +586,176 @@
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.806484" elapsed="0.115431"/>
+<status status="PASS" start="2025-10-19T14:55:00.440923" elapsed="0.104430"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:00.922490" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:00.545978" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:00.922177" elapsed="0.093672"/>
+<status status="PASS" start="2025-10-19T14:55:00.545637" elapsed="0.079319"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:02.016777" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:01.625598" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:01.016193" elapsed="1.000754"/>
+<status status="PASS" start="2025-10-19T14:55:00.625196" elapsed="1.000558"/>
 </kw>
 <arg>password</arg>
 <doc>Register with one empty field</doc>
-<status status="PASS" start="2025-10-18T15:10:59.993554" elapsed="2.023564"/>
+<status status="PASS" start="2025-10-19T14:54:59.829777" elapsed="1.796123"/>
 </kw>
 <kw name="Verify Registration Fails" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:02.462138" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_3.png"&gt;&lt;img src="registration_failure_3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:02.078189" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_3.png"&gt;&lt;img src="registration_failure_3.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_failure_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:02.018150" elapsed="0.444146"/>
+<status status="PASS" start="2025-10-19T14:55:01.627143" elapsed="0.451246"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:02.468890" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:02.085871" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:02.462625" elapsed="0.006367"/>
+<status status="PASS" start="2025-10-19T14:55:02.078641" elapsed="0.007316"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>dashboard</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:02.469282" elapsed="0.000351"/>
+<status status="PASS" start="2025-10-19T14:55:02.086202" elapsed="0.000287"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>stafflogin</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:02.469871" elapsed="0.000283"/>
+<status status="PASS" start="2025-10-19T14:55:02.086688" elapsed="0.000308"/>
 </kw>
 <doc>Verify that registration did not succeed and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:02.017675" elapsed="0.452624"/>
+<status status="PASS" start="2025-10-19T14:55:01.626530" elapsed="0.460693"/>
 </kw>
 <doc>Test registration with empty password field</doc>
-<status status="PASS" start="2025-10-18T15:10:59.888220" elapsed="2.582411"/>
+<status status="PASS" start="2025-10-19T14:54:59.749928" elapsed="2.337726"/>
 </test>
 <test id="s1-t6" name="Test Login With Empty Username" line="41">
 <kw name="Go To Staff Login Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:02.472847" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
+<msg time="2025-10-19T14:55:02.089573" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
 <arg>${URL}/stafflogin/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:02.472631" elapsed="0.085649"/>
+<status status="PASS" start="2025-10-19T14:55:02.089391" elapsed="0.084413"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:02.718906" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-18T15:11:02.719261" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
+<msg time="2025-10-19T14:55:02.354631" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:02.355130" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
 <arg>Staff Login</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-10-18T15:11:02.558611" elapsed="0.164918">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:02.174148" elapsed="0.183309">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <doc>Navigate to staff login page</doc>
-<status status="FAIL" start="2025-10-18T15:11:02.472231" elapsed="0.251625">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:02.089057" elapsed="0.268616">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <kw name="Login With Empty Field" owner="LoginRegistrationTest">
 <arg>username</arg>
 <doc>Login with empty field(s)</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:02.724541" elapsed="0.000067"/>
+<status status="NOT RUN" start="2025-10-19T14:55:02.358126" elapsed="0.000089"/>
 </kw>
 <kw name="Verify Login Fails" owner="LoginRegistrationTest">
 <doc>Verify that login did not succeed and capture screenshot</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:02.724889" elapsed="0.000052"/>
+<status status="NOT RUN" start="2025-10-19T14:55:02.358705" elapsed="0.000084"/>
 </kw>
 <doc>Test login with empty username field</doc>
-<status status="FAIL" start="2025-10-18T15:11:02.471472" elapsed="0.253744">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:02.088339" elapsed="0.270807">Page should have contained text 'Staff Login' but did not.</status>
 </test>
 <test id="s1-t7" name="Test Login With Empty Password" line="47">
 <kw name="Go To Staff Login Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:02.727294" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
+<msg time="2025-10-19T14:55:02.362431" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
 <arg>${URL}/stafflogin/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:02.727066" elapsed="0.071047"/>
+<status status="PASS" start="2025-10-19T14:55:02.362029" elapsed="0.069998"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:02.968794" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-18T15:11:02.969070" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
+<msg time="2025-10-19T14:55:02.603838" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:02.604056" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
 <arg>Staff Login</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-10-18T15:11:02.798507" elapsed="0.171605">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:02.432371" elapsed="0.172743">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <doc>Navigate to staff login page</doc>
-<status status="FAIL" start="2025-10-18T15:11:02.726674" elapsed="0.243701">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:02.361253" elapsed="0.244088">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <kw name="Login With Empty Field" owner="LoginRegistrationTest">
 <arg>password</arg>
 <doc>Login with empty field(s)</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:02.970962" elapsed="0.000113"/>
+<status status="NOT RUN" start="2025-10-19T14:55:02.606003" elapsed="0.000125"/>
 </kw>
 <kw name="Verify Login Fails" owner="LoginRegistrationTest">
 <doc>Verify that login did not succeed and capture screenshot</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:02.971582" elapsed="0.000074"/>
+<status status="NOT RUN" start="2025-10-19T14:55:02.606517" elapsed="0.000047"/>
 </kw>
 <doc>Test login with empty password field</doc>
-<status status="FAIL" start="2025-10-18T15:11:02.725935" elapsed="0.246110">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:02.360072" elapsed="0.246781">Page should have contained text 'Staff Login' but did not.</status>
 </test>
 <test id="s1-t8" name="Test Login With Both Fields Empty" line="53">
 <kw name="Go To Staff Login Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:02.974592" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
+<msg time="2025-10-19T14:55:02.609263" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
 <arg>${URL}/stafflogin/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:02.974324" elapsed="0.068201"/>
+<status status="PASS" start="2025-10-19T14:55:02.609007" elapsed="0.076183"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:03.204597" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-18T15:11:03.204880" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
+<msg time="2025-10-19T14:55:02.890036" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:02.890355" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
 <arg>Staff Login</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-10-18T15:11:03.042936" elapsed="0.163524">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:02.685490" elapsed="0.206420">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <doc>Navigate to staff login page</doc>
-<status status="FAIL" start="2025-10-18T15:11:02.973883" elapsed="0.232848">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:02.608529" elapsed="0.283683">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <kw name="Login With Empty Field" owner="LoginRegistrationTest">
 <arg>both</arg>
 <doc>Login with empty field(s)</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:03.207245" elapsed="0.000087"/>
+<status status="NOT RUN" start="2025-10-19T14:55:02.893963" elapsed="0.000138"/>
 </kw>
 <kw name="Verify Login Fails" owner="LoginRegistrationTest">
 <doc>Verify that login did not succeed and capture screenshot</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:03.207914" elapsed="0.000081"/>
+<status status="NOT RUN" start="2025-10-19T14:55:02.894853" elapsed="0.000098"/>
 </kw>
 <doc>Test login with both username and password empty</doc>
-<status status="FAIL" start="2025-10-18T15:11:02.972926" elapsed="0.235471">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:02.607656" elapsed="0.287808">Page should have contained text 'Staff Login' but did not.</status>
 </test>
 <test id="s1-t9" name="Test Registration With Special Characters In Username" line="60">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:03.210164" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:02.898457" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.210003" elapsed="0.069001"/>
+<status status="PASS" start="2025-10-19T14:55:02.898039" elapsed="0.077496"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:03.297340" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:02.990823" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.279353" elapsed="0.018122"/>
+<status status="PASS" start="2025-10-19T14:55:02.975805" elapsed="0.015177"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:03.209698" elapsed="0.087912"/>
+<status status="PASS" start="2025-10-19T14:55:02.896960" elapsed="0.094188"/>
 </kw>
 <kw name="Register User With Special Chars" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.298495" elapsed="0.018425"/>
+<status status="PASS" start="2025-10-19T14:55:02.992385" elapsed="0.017172"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:03.318063" level="INFO">Typing text 'user@#$%' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:03.011134" level="INFO">Typing text 'user@#$%' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>${special_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.317715" elapsed="0.103055"/>
+<status status="PASS" start="2025-10-19T14:55:03.010758" elapsed="0.106379"/>
 </kw>
 <arg>'${field_type}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -764,29 +766,29 @@
 <arg>name=uname</arg>
 <arg>testuser_special_${special_value}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.317254" elapsed="0.103739"/>
+<status status="PASS" start="2025-10-19T14:55:03.010057" elapsed="0.107319"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:03.421717" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:03.118189" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.421307" elapsed="0.102355"/>
+<status status="PASS" start="2025-10-19T14:55:03.117712" elapsed="0.101845"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:03.524507" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:03.220198" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.524049" elapsed="0.124874"/>
+<status status="PASS" start="2025-10-19T14:55:03.219853" elapsed="0.132899"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:03.650639" level="INFO">Typing text 'testspecial_user@#$%@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:03.353775" level="INFO">Typing text 'testspecial_user@#$%@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>testspecial_${special_value}@example.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.650054" elapsed="0.152551"/>
+<status status="PASS" start="2025-10-19T14:55:03.353451" elapsed="0.156362"/>
 </kw>
 <arg>'${field_type}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -797,95 +799,95 @@
 <arg>name=email</arg>
 <arg>testspecial_${special_value}@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.649344" elapsed="0.153431"/>
+<status status="PASS" start="2025-10-19T14:55:03.353047" elapsed="0.157197"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:03.803519" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:03.511790" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.803155" elapsed="0.104860"/>
+<status status="PASS" start="2025-10-19T14:55:03.510750" elapsed="0.102133"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:03.908724" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:03.613451" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:03.908341" elapsed="0.115784"/>
+<status status="PASS" start="2025-10-19T14:55:03.613151" elapsed="0.120249"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:04.024662" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:03.733930" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:04.024386" elapsed="0.082350"/>
+<status status="PASS" start="2025-10-19T14:55:03.733654" elapsed="0.083188"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:05.107538" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:04.817800" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:04.107055" elapsed="1.000649"/>
+<status status="PASS" start="2025-10-19T14:55:03.817122" elapsed="1.000833"/>
 </kw>
 <arg>username</arg>
 <arg>user@#$%</arg>
 <doc>Register with special characters in specified field</doc>
-<status status="PASS" start="2025-10-18T15:11:03.298080" elapsed="1.809770"/>
+<status status="PASS" start="2025-10-19T14:55:02.991826" elapsed="1.826271"/>
 </kw>
 <kw name="Verify Registration Behavior" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:05.557078" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_1.png"&gt;&lt;img src="registration_behavior_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:05.257618" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_1.png"&gt;&lt;img src="registration_behavior_1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_behavior_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.108833" elapsed="0.448453"/>
+<status status="PASS" start="2025-10-19T14:55:04.818984" elapsed="0.438789"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:05.562957" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:05.265904" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.557577" elapsed="0.005482"/>
+<status status="PASS" start="2025-10-19T14:55:05.258023" elapsed="0.007980"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-10-18T15:11:05.563705" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:05.266801" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
 <arg>Current URL: ${current_url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.563353" elapsed="0.000505"/>
+<status status="PASS" start="2025-10-19T14:55:05.266433" elapsed="0.000507"/>
 </kw>
 <doc>Verify registration behavior and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:05.108318" elapsed="0.455780"/>
+<status status="PASS" start="2025-10-19T14:55:04.818574" elapsed="0.448593"/>
 </kw>
 <doc>Test registration with special characters in username</doc>
-<status status="PASS" start="2025-10-18T15:11:03.209047" elapsed="2.355601"/>
+<status status="PASS" start="2025-10-19T14:55:02.896233" elapsed="2.371388"/>
 </test>
 <test id="s1-t10" name="Test Registration With Special Characters In Email" line="66">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:05.566841" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:05.270699" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.566665" elapsed="0.061648"/>
+<status status="PASS" start="2025-10-19T14:55:05.270307" elapsed="0.060178"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:05.646833" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:05.347760" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.628607" elapsed="0.018389"/>
+<status status="PASS" start="2025-10-19T14:55:05.330889" elapsed="0.017043"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:05.566336" elapsed="0.081246"/>
+<status status="PASS" start="2025-10-19T14:55:05.269680" elapsed="0.078425"/>
 </kw>
 <kw name="Register User With Special Chars" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.649975" elapsed="0.019899"/>
+<status status="PASS" start="2025-10-19T14:55:05.349907" elapsed="0.021241"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:05.671312" level="INFO">Typing text 'testuser_special_invalid@@email..com' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:05.372419" level="INFO">Typing text 'testuser_special_invalid@@email..com' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>testuser_special_${special_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.670800" elapsed="0.125074"/>
+<status status="PASS" start="2025-10-19T14:55:05.372012" elapsed="0.136417"/>
 </kw>
 <arg>'${field_type}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -896,29 +898,29 @@
 <arg>name=uname</arg>
 <arg>testuser_special_${special_value}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.670227" elapsed="0.125795"/>
+<status status="PASS" start="2025-10-19T14:55:05.371492" elapsed="0.137092"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:05.796487" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:05.509122" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.796228" elapsed="0.087994"/>
+<status status="PASS" start="2025-10-19T14:55:05.508827" elapsed="0.098176"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:05.884967" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:05.607694" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.884551" elapsed="0.113695"/>
+<status status="PASS" start="2025-10-19T14:55:05.607259" elapsed="0.128658"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:05.999681" level="INFO">Typing text 'invalid@@email..com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:05.736890" level="INFO">Typing text 'invalid@@email..com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${special_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.999198" elapsed="0.124047"/>
+<status status="PASS" start="2025-10-19T14:55:05.736584" elapsed="0.144655"/>
 </kw>
 <arg>'${field_type}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -929,101 +931,101 @@
 <arg>name=email</arg>
 <arg>testspecial_${special_value}@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:05.998625" elapsed="0.124770"/>
+<status status="PASS" start="2025-10-19T14:55:05.736190" elapsed="0.145288"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:06.123908" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:05.882329" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:06.123623" elapsed="0.111032"/>
+<status status="PASS" start="2025-10-19T14:55:05.881863" elapsed="0.111460"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:06.235130" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:05.993933" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:06.234878" elapsed="0.122158"/>
+<status status="PASS" start="2025-10-19T14:55:05.993602" elapsed="0.133248"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:06.357575" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:06.127625" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:06.357295" elapsed="0.086014"/>
+<status status="PASS" start="2025-10-19T14:55:06.127305" elapsed="0.089334"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:07.443986" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:07.217749" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:06.443544" elapsed="1.000651"/>
+<status status="PASS" start="2025-10-19T14:55:06.216937" elapsed="1.000998"/>
 </kw>
 <arg>email</arg>
 <arg>invalid@@email..com</arg>
 <doc>Register with special characters in specified field</doc>
-<status status="PASS" start="2025-10-18T15:11:05.649145" elapsed="1.795488"/>
+<status status="PASS" start="2025-10-19T14:55:05.348734" elapsed="1.869386"/>
 </kw>
 <kw name="Verify Registration Fails" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:07.890776" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_4.png"&gt;&lt;img src="registration_failure_4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:07.657686" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_4.png"&gt;&lt;img src="registration_failure_4.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_failure_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:07.445999" elapsed="0.444935"/>
+<status status="PASS" start="2025-10-19T14:55:07.219182" elapsed="0.438745"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:07.896048" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:07.668245" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:07.891158" elapsed="0.004970"/>
+<status status="PASS" start="2025-10-19T14:55:07.658319" elapsed="0.009982"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>dashboard</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:07.896397" elapsed="0.000355"/>
+<status status="PASS" start="2025-10-19T14:55:07.668505" elapsed="0.000243"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>stafflogin</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:07.896962" elapsed="0.000274"/>
+<status status="PASS" start="2025-10-19T14:55:07.668895" elapsed="0.000199"/>
 </kw>
 <doc>Verify that registration did not succeed and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:07.445388" elapsed="0.451993"/>
+<status status="PASS" start="2025-10-19T14:55:07.218717" elapsed="0.450505"/>
 </kw>
 <doc>Test registration with invalid email containing special characters</doc>
-<status status="PASS" start="2025-10-18T15:11:05.565487" elapsed="2.332241"/>
+<status status="PASS" start="2025-10-19T14:55:05.268445" elapsed="2.401346"/>
 </test>
 <test id="s1-t11" name="Test Registration With SQL Injection Attempt" line="72">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:07.901053" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:07.672337" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:07.900668" elapsed="0.060050"/>
+<status status="PASS" start="2025-10-19T14:55:07.672140" elapsed="0.069460"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:07.979088" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:07.760534" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:07.961035" elapsed="0.018201"/>
+<status status="PASS" start="2025-10-19T14:55:07.741916" elapsed="0.018759"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:07.899892" elapsed="0.079502"/>
+<status status="PASS" start="2025-10-19T14:55:07.671743" elapsed="0.089074"/>
 </kw>
 <kw name="Register User With Special Chars" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:07.980357" elapsed="0.022093"/>
+<status status="PASS" start="2025-10-19T14:55:07.762305" elapsed="0.017215"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:08.003555" level="INFO">Typing text 'admin' OR '1'='1' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:07.780684" level="INFO">Typing text 'admin' OR '1'='1' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>${special_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.003209" elapsed="0.104487"/>
+<status status="PASS" start="2025-10-19T14:55:07.780259" elapsed="0.117875"/>
 </kw>
 <arg>'${field_type}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -1034,29 +1036,29 @@
 <arg>name=uname</arg>
 <arg>testuser_special_${special_value}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.002736" elapsed="0.105097"/>
+<status status="PASS" start="2025-10-19T14:55:07.779790" elapsed="0.118528"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:08.108326" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:07.898968" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.108033" elapsed="0.086989"/>
+<status status="PASS" start="2025-10-19T14:55:07.898600" elapsed="0.113617"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:08.195578" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:08.012788" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.195281" elapsed="0.108616"/>
+<status status="PASS" start="2025-10-19T14:55:08.012471" elapsed="0.108636"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:08.305261" level="INFO">Typing text 'testspecial_admin' OR '1'='1@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:08.122210" level="INFO">Typing text 'testspecial_admin' OR '1'='1@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>testspecial_${special_value}@example.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.304790" elapsed="0.150730"/>
+<status status="PASS" start="2025-10-19T14:55:08.121843" elapsed="0.160213"/>
 </kw>
 <arg>'${field_type}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -1067,126 +1069,126 @@
 <arg>name=email</arg>
 <arg>testspecial_${special_value}@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.304259" elapsed="0.151442"/>
+<status status="PASS" start="2025-10-19T14:55:08.121406" elapsed="0.160918"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:08.456348" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:08.283193" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.455977" elapsed="0.112774"/>
+<status status="PASS" start="2025-10-19T14:55:08.282733" elapsed="0.109075"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:08.569373" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:08.392357" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.569049" elapsed="0.117688"/>
+<status status="PASS" start="2025-10-19T14:55:08.392064" elapsed="0.132243"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:08.687344" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:08.524895" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.687024" elapsed="0.078725"/>
+<status status="PASS" start="2025-10-19T14:55:08.524588" elapsed="0.082117"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:09.766827" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:09.607867" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:08.766002" elapsed="1.001128"/>
+<status status="PASS" start="2025-10-19T14:55:08.607018" elapsed="1.001033"/>
 </kw>
 <arg>username</arg>
 <arg>admin' OR '1'='1</arg>
 <doc>Register with special characters in specified field</doc>
-<status status="PASS" start="2025-10-18T15:11:07.979904" elapsed="1.787511"/>
+<status status="PASS" start="2025-10-19T14:55:07.761412" elapsed="1.846824"/>
 </kw>
 <kw name="Verify Registration Behavior" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.231486" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_2.png"&gt;&lt;img src="registration_behavior_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:10.152305" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_2.png"&gt;&lt;img src="registration_behavior_2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_behavior_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:09.768748" elapsed="0.462904"/>
+<status status="PASS" start="2025-10-19T14:55:09.609734" elapsed="0.542878"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.238312" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:10.160372" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.231889" elapsed="0.006515"/>
+<status status="PASS" start="2025-10-19T14:55:10.152870" elapsed="0.007569"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-10-18T15:11:10.239283" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:10.161034" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
 <arg>Current URL: ${current_url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.238950" elapsed="0.000456"/>
+<status status="PASS" start="2025-10-19T14:55:10.160694" elapsed="0.000428"/>
 </kw>
 <doc>Verify registration behavior and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:09.768157" elapsed="0.471407"/>
+<status status="PASS" start="2025-10-19T14:55:09.608943" elapsed="0.552306"/>
 </kw>
 <doc>Test registration security against SQL injection</doc>
-<status status="PASS" start="2025-10-18T15:11:07.898617" elapsed="2.341326"/>
+<status status="PASS" start="2025-10-19T14:55:07.670727" elapsed="2.490889"/>
 </test>
 <test id="s1-t12" name="Test Login With Special Characters" line="78">
 <kw name="Go To Staff Login Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.242427" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
+<msg time="2025-10-19T14:55:10.164669" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
 <arg>${URL}/stafflogin/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.242165" elapsed="0.089438"/>
+<status status="PASS" start="2025-10-19T14:55:10.164268" elapsed="0.097838"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.500376" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-18T15:11:10.500690" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
+<msg time="2025-10-19T14:55:10.450087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:10.450569" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
 <arg>Staff Login</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-10-18T15:11:10.332016" elapsed="0.170375">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:10.262722" elapsed="0.189501">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <doc>Navigate to staff login page</doc>
-<status status="FAIL" start="2025-10-18T15:11:10.241691" elapsed="0.260921">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:10.163681" elapsed="0.288893">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <kw name="Login With Special Chars" owner="LoginRegistrationTest">
 <arg>user@#$%</arg>
 <arg>pass@#$%</arg>
 <doc>Login with special characters</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:10.503188" elapsed="0.000114"/>
+<status status="NOT RUN" start="2025-10-19T14:55:10.453234" elapsed="0.000110"/>
 </kw>
 <kw name="Verify Login Fails" owner="LoginRegistrationTest">
 <doc>Verify that login did not succeed and capture screenshot</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:10.503871" elapsed="0.000084"/>
+<status status="NOT RUN" start="2025-10-19T14:55:10.453758" elapsed="0.000056"/>
 </kw>
 <doc>Test login with special characters in credentials</doc>
-<status status="FAIL" start="2025-10-18T15:11:10.240734" elapsed="0.263793">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:10.162649" elapsed="0.291464">Page should have contained text 'Staff Login' but did not.</status>
 </test>
 <test id="s1-t13" name="Test Registration With Very Long Username" line="85">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.506907" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:10.457145" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.506722" elapsed="0.076553"/>
+<status status="PASS" start="2025-10-19T14:55:10.456664" elapsed="0.086095"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.595852" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:10.562638" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.583716" elapsed="0.012268"/>
+<status status="PASS" start="2025-10-19T14:55:10.542998" elapsed="0.019830"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:10.506363" elapsed="0.089756"/>
+<status status="PASS" start="2025-10-19T14:55:10.456004" elapsed="0.106985"/>
 </kw>
 <kw name="Register User With Long Input" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.597344" elapsed="0.016109"/>
+<status status="PASS" start="2025-10-19T14:55:10.564070" elapsed="0.018907"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.614352" level="INFO">Typing text 'abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:10.584690" level="INFO">Typing text 'abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>${long_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.614085" elapsed="0.156938"/>
+<status status="PASS" start="2025-10-19T14:55:10.584142" elapsed="0.186653"/>
 </kw>
 <arg>'${field_type}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -1197,29 +1199,29 @@
 <arg>name=uname</arg>
 <arg>testuser_long</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.613724" elapsed="0.157572"/>
+<status status="PASS" start="2025-10-19T14:55:10.583412" elapsed="0.187591"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.771882" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:10.771710" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.771583" elapsed="0.105063"/>
+<status status="PASS" start="2025-10-19T14:55:10.771328" elapsed="0.107248"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.877464" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:10.879419" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.876990" elapsed="0.115309"/>
+<status status="PASS" start="2025-10-19T14:55:10.878937" elapsed="0.137440"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:10.993560" level="INFO">Typing text 'testlong@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:11.017352" level="INFO">Typing text 'testlong@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>testlong@example.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.993148" elapsed="0.124695"/>
+<status status="PASS" start="2025-10-19T14:55:11.017079" elapsed="0.156634"/>
 </kw>
 <arg>'${field_type}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -1230,95 +1232,95 @@
 <arg>name=email</arg>
 <arg>testlong@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:10.992622" elapsed="0.125374"/>
+<status status="PASS" start="2025-10-19T14:55:11.016661" elapsed="0.157213"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:11.119704" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:11.174433" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:11.118917" elapsed="0.104993"/>
+<status status="PASS" start="2025-10-19T14:55:11.174119" elapsed="0.124904"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:11.224522" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:11.299865" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:11.224190" elapsed="0.133871"/>
+<status status="PASS" start="2025-10-19T14:55:11.299412" elapsed="0.138540"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:11.358661" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:11.438632" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:11.358370" elapsed="0.136274"/>
+<status status="PASS" start="2025-10-19T14:55:11.438293" elapsed="0.153752"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:12.496000" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:12.592747" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:11.494954" elapsed="1.001288"/>
+<status status="PASS" start="2025-10-19T14:55:11.592321" elapsed="1.000581"/>
 </kw>
 <arg>username</arg>
 <arg>abcdefghijklmnopqrstuvwxyz1234567890abcdefghijklmnopqrstuvwxyz</arg>
 <doc>Register with very long input in specified field</doc>
-<status status="PASS" start="2025-10-18T15:11:10.596750" elapsed="1.899678"/>
+<status status="PASS" start="2025-10-19T14:55:10.563542" elapsed="2.029609"/>
 </kw>
 <kw name="Verify Registration Behavior" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:12.888794" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_3.png"&gt;&lt;img src="registration_behavior_3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:12.966023" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_3.png"&gt;&lt;img src="registration_behavior_3.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_behavior_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:12.497338" elapsed="0.391790"/>
+<status status="PASS" start="2025-10-19T14:55:12.594080" elapsed="0.372174"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:12.894589" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:12.974789" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:12.889340" elapsed="0.005332"/>
+<status status="PASS" start="2025-10-19T14:55:12.966582" elapsed="0.008301"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-10-18T15:11:12.895203" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:12.975596" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
 <arg>Current URL: ${current_url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-10-18T15:11:12.894942" elapsed="0.000341"/>
+<status status="PASS" start="2025-10-19T14:55:12.975243" elapsed="0.000470"/>
 </kw>
 <doc>Verify registration behavior and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:12.496937" elapsed="0.398472"/>
+<status status="PASS" start="2025-10-19T14:55:12.593633" elapsed="0.382259"/>
 </kw>
 <doc>Test registration with username exceeding normal length</doc>
-<status status="PASS" start="2025-10-18T15:11:10.505572" elapsed="2.390147"/>
+<status status="PASS" start="2025-10-19T14:55:10.455048" elapsed="2.521288"/>
 </test>
 <test id="s1-t14" name="Test Registration With Very Long Email" line="91">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:12.897490" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:12.979812" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:12.897309" elapsed="0.060202"/>
+<status status="PASS" start="2025-10-19T14:55:12.979510" elapsed="0.061987"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:12.971659" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:13.056699" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:12.957995" elapsed="0.013950"/>
+<status status="PASS" start="2025-10-19T14:55:13.041876" elapsed="0.014984"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:12.896985" elapsed="0.075224"/>
+<status status="PASS" start="2025-10-19T14:55:12.979030" elapsed="0.077989"/>
 </kw>
 <kw name="Register User With Long Input" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:12.973588" elapsed="0.018662"/>
+<status status="PASS" start="2025-10-19T14:55:13.057929" elapsed="0.018515"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:12.993383" level="INFO">Typing text 'testuser_long' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:13.077467" level="INFO">Typing text 'testuser_long' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>testuser_long</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:12.993064" elapsed="0.098272"/>
+<status status="PASS" start="2025-10-19T14:55:13.077181" elapsed="0.103092"/>
 </kw>
 <arg>'${field_type}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -1329,29 +1331,29 @@
 <arg>name=uname</arg>
 <arg>testuser_long</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:12.992592" elapsed="0.098882"/>
+<status status="PASS" start="2025-10-19T14:55:13.076743" elapsed="0.103792"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:13.092007" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:13.181505" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:13.091697" elapsed="0.093389"/>
+<status status="PASS" start="2025-10-19T14:55:13.180937" elapsed="0.092249"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:13.185925" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:13.273724" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:13.185409" elapsed="0.114086"/>
+<status status="PASS" start="2025-10-19T14:55:13.273440" elapsed="0.124600"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:13.300646" level="INFO">Typing text 'verylongemailaddress1234567890@verylongdomainnameexample.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:13.399970" level="INFO">Typing text 'verylongemailaddress1234567890@verylongdomainnameexample.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${long_value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:13.300281" elapsed="0.179834"/>
+<status status="PASS" start="2025-10-19T14:55:13.399262" elapsed="0.229861"/>
 </kw>
 <arg>'${field_type}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -1362,141 +1364,141 @@
 <arg>name=email</arg>
 <arg>testlong@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:13.299814" elapsed="0.180454"/>
+<status status="PASS" start="2025-10-19T14:55:13.398425" elapsed="0.230906"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:13.480933" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:13.630161" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:13.480525" elapsed="0.116847"/>
+<status status="PASS" start="2025-10-19T14:55:13.629669" elapsed="0.157843"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:13.598184" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:13.788206" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:13.597742" elapsed="0.120491"/>
+<status status="PASS" start="2025-10-19T14:55:13.787822" elapsed="0.151478"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:13.718905" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:13.939879" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:13.718534" elapsed="0.127987"/>
+<status status="PASS" start="2025-10-19T14:55:13.939572" elapsed="0.167176"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:14.847246" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:15.107700" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:13.846816" elapsed="1.000669"/>
+<status status="PASS" start="2025-10-19T14:55:14.107157" elapsed="1.000723"/>
 </kw>
 <arg>email</arg>
 <arg>verylongemailaddress1234567890@verylongdomainnameexample.com</arg>
 <doc>Register with very long input in specified field</doc>
-<status status="PASS" start="2025-10-18T15:11:12.973029" elapsed="1.874644"/>
+<status status="PASS" start="2025-10-19T14:55:13.057514" elapsed="2.050544"/>
 </kw>
 <kw name="Verify Registration Behavior" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.238608" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_4.png"&gt;&lt;img src="registration_behavior_4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:15.527559" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_4.png"&gt;&lt;img src="registration_behavior_4.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_behavior_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:14.849597" elapsed="0.389255"/>
+<status status="PASS" start="2025-10-19T14:55:15.109161" elapsed="0.418579"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.244125" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:15.535914" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.239226" elapsed="0.004955"/>
+<status status="PASS" start="2025-10-19T14:55:15.527991" elapsed="0.008043"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-10-18T15:11:15.244557" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:15.536882" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
 <arg>Current URL: ${current_url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.244371" elapsed="0.000240"/>
+<status status="PASS" start="2025-10-19T14:55:15.536438" elapsed="0.000573"/>
 </kw>
 <doc>Verify registration behavior and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:14.848846" elapsed="0.395851"/>
+<status status="PASS" start="2025-10-19T14:55:15.108674" elapsed="0.428684"/>
 </kw>
 <doc>Test registration with very long email address</doc>
-<status status="PASS" start="2025-10-18T15:11:12.896356" elapsed="2.348703"/>
+<status status="PASS" start="2025-10-19T14:55:12.977735" elapsed="2.560074"/>
 </test>
 <test id="s1-t15" name="Test Registration With Single Character Fields" line="97">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.247782" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:15.539796" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.247527" elapsed="0.060849"/>
+<status status="PASS" start="2025-10-19T14:55:15.539539" elapsed="0.067330"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.321018" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:15.624165" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.308781" elapsed="0.012353"/>
+<status status="PASS" start="2025-10-19T14:55:15.607277" elapsed="0.017050"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:15.247075" elapsed="0.074178"/>
+<status status="PASS" start="2025-10-19T14:55:15.539095" elapsed="0.085399"/>
 </kw>
 <kw name="Register User With Short Input" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.323596" elapsed="0.016768"/>
+<status status="PASS" start="2025-10-19T14:55:15.625728" elapsed="0.017808"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.341292" level="INFO">Typing text 'a' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:15.644429" level="INFO">Typing text 'a' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>${uname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.340742" elapsed="0.083720"/>
+<status status="PASS" start="2025-10-19T14:55:15.643901" elapsed="0.094635"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.425448" level="INFO">Typing text 'a' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:15.739273" level="INFO">Typing text 'a' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>${fname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.424875" elapsed="0.086558"/>
+<status status="PASS" start="2025-10-19T14:55:15.738822" elapsed="0.095117"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.512027" level="INFO">Typing text 'a' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:15.834853" level="INFO">Typing text 'a' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>${lname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.511687" elapsed="0.079194"/>
+<status status="PASS" start="2025-10-19T14:55:15.834293" elapsed="0.093523"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.591876" level="INFO">Typing text 'a@a.a' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:15.928541" level="INFO">Typing text 'a@a.a' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.591298" elapsed="0.084272"/>
+<status status="PASS" start="2025-10-19T14:55:15.928120" elapsed="0.100924"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.676332" level="INFO">Typing text '123' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:16.030044" level="INFO">Typing text '123' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>${phone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.675865" elapsed="0.087012"/>
+<status status="PASS" start="2025-10-19T14:55:16.029405" elapsed="0.105996"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.763663" level="INFO">Typing text 'a' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:16.136284" level="INFO">Typing text 'a' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.763207" elapsed="0.113049"/>
+<status status="PASS" start="2025-10-19T14:55:16.135758" elapsed="0.120527"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:15.877132" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:16.256900" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.876638" elapsed="0.122724"/>
+<status status="PASS" start="2025-10-19T14:55:16.256593" elapsed="0.130863"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:17.000452" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:17.388269" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:15.999671" elapsed="1.000986"/>
+<status status="PASS" start="2025-10-19T14:55:16.387744" elapsed="1.000679"/>
 </kw>
 <arg>a</arg>
 <arg>a</arg>
@@ -1505,346 +1507,346 @@
 <arg>123</arg>
 <arg>a</arg>
 <doc>Register with minimum length inputs</doc>
-<status status="PASS" start="2025-10-18T15:11:15.322369" elapsed="1.678469"/>
+<status status="PASS" start="2025-10-19T14:55:15.625082" elapsed="1.763480"/>
 </kw>
 <kw name="Verify Registration Behavior" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:17.431875" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_5.png"&gt;&lt;img src="registration_behavior_5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:17.757470" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_5.png"&gt;&lt;img src="registration_behavior_5.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_behavior_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.001755" elapsed="0.430290"/>
+<status status="PASS" start="2025-10-19T14:55:17.389680" elapsed="0.368065"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:17.436479" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:17.765760" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.432291" elapsed="0.004269"/>
+<status status="PASS" start="2025-10-19T14:55:17.758070" elapsed="0.007769"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-10-18T15:11:17.437035" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:17.766393" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
 <arg>Current URL: ${current_url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.436798" elapsed="0.000325"/>
+<status status="PASS" start="2025-10-19T14:55:17.766097" elapsed="0.000387"/>
 </kw>
 <doc>Verify registration behavior and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:17.001355" elapsed="0.435882"/>
+<status status="PASS" start="2025-10-19T14:55:17.389168" elapsed="0.377448"/>
 </kw>
 <doc>Test registration with minimum length inputs</doc>
-<status status="PASS" start="2025-10-18T15:11:15.245983" elapsed="2.191547"/>
+<status status="PASS" start="2025-10-19T14:55:15.538432" elapsed="2.228906"/>
 </test>
 <test id="s1-t16" name="Test Registration With Invalid Email Format" line="103">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:17.444102" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:17.769743" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.439672" elapsed="0.061333"/>
+<status status="PASS" start="2025-10-19T14:55:17.769538" elapsed="0.060117"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:17.519010" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:17.850640" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.501388" elapsed="0.017766"/>
+<status status="PASS" start="2025-10-19T14:55:17.830098" elapsed="0.020795"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:17.439272" elapsed="0.080020"/>
+<status status="PASS" start="2025-10-19T14:55:17.769176" elapsed="0.082070"/>
 </kw>
 <kw name="Register User With Invalid Email" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.520385" elapsed="0.018664"/>
+<status status="PASS" start="2025-10-19T14:55:17.852246" elapsed="0.018585"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:17.539680" level="INFO">Typing text 'testuser_invalidemail' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:17.871575" level="INFO">Typing text 'testuser_invalidemail' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>testuser_invalidemail</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.539346" elapsed="0.112636"/>
+<status status="PASS" start="2025-10-19T14:55:17.871176" elapsed="0.122142"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:17.652550" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:17.993852" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.652246" elapsed="0.095765"/>
+<status status="PASS" start="2025-10-19T14:55:17.993568" elapsed="0.092631"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:17.748653" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:18.086924" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.748315" elapsed="0.220207"/>
+<status status="PASS" start="2025-10-19T14:55:18.086603" elapsed="0.131687"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:17.969610" level="INFO">Typing text 'invalidemail' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:18.219142" level="INFO">Typing text 'invalidemail' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${invalid_email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:17.968974" elapsed="0.139386"/>
+<status status="PASS" start="2025-10-19T14:55:18.218658" elapsed="0.128686"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:18.110572" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:18.347900" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:18.110009" elapsed="0.125421"/>
+<status status="PASS" start="2025-10-19T14:55:18.347613" elapsed="0.120464"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:18.236182" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:18.468691" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:18.235731" elapsed="0.129518"/>
+<status status="PASS" start="2025-10-19T14:55:18.468334" elapsed="0.123208"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:18.365830" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:18.592037" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:18.365526" elapsed="0.075117"/>
+<status status="PASS" start="2025-10-19T14:55:18.591791" elapsed="0.084417"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:19.442727" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:19.676911" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:18.440925" elapsed="1.001979"/>
+<status status="PASS" start="2025-10-19T14:55:18.676491" elapsed="1.000572"/>
 </kw>
 <arg>invalidemail</arg>
 <doc>Register with invalid email format</doc>
-<status status="PASS" start="2025-10-18T15:11:17.519897" elapsed="1.923153"/>
+<status status="PASS" start="2025-10-19T14:55:17.851838" elapsed="1.825367"/>
 </kw>
 <kw name="Verify Registration Fails" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:19.922439" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_5.png"&gt;&lt;img src="registration_failure_5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:20.103210" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_5.png"&gt;&lt;img src="registration_failure_5.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_failure_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:19.444243" elapsed="0.478368"/>
+<status status="PASS" start="2025-10-19T14:55:19.678082" elapsed="0.425331"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:19.929029" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:20.110763" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:19.922881" elapsed="0.006201"/>
+<status status="PASS" start="2025-10-19T14:55:20.103670" elapsed="0.007172"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>dashboard</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:19.929264" elapsed="0.000200"/>
+<status status="PASS" start="2025-10-19T14:55:20.111093" elapsed="0.000292"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>stafflogin</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:19.929576" elapsed="0.000148"/>
+<status status="PASS" start="2025-10-19T14:55:20.111563" elapsed="0.000218"/>
 </kw>
 <doc>Verify that registration did not succeed and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:19.443672" elapsed="0.486139"/>
+<status status="PASS" start="2025-10-19T14:55:19.677693" elapsed="0.434272"/>
 </kw>
 <doc>Test registration with invalid email formats</doc>
-<status status="PASS" start="2025-10-18T15:11:17.438277" elapsed="2.491882"/>
+<status status="PASS" start="2025-10-19T14:55:17.768258" elapsed="2.344044"/>
 </test>
 <test id="s1-t17" name="Test Registration With Invalid Phone Number" line="109">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:19.931797" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:20.114405" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:19.931644" elapsed="0.060788"/>
+<status status="PASS" start="2025-10-19T14:55:20.114219" elapsed="0.067331"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:20.014655" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:20.203214" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:19.992875" elapsed="0.021940"/>
+<status status="PASS" start="2025-10-19T14:55:20.181800" elapsed="0.021561"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:19.931377" elapsed="0.083609"/>
+<status status="PASS" start="2025-10-19T14:55:20.113847" elapsed="0.089669"/>
 </kw>
 <kw name="Register User With Invalid Phone" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:20.016659" elapsed="0.038130"/>
+<status status="PASS" start="2025-10-19T14:55:20.204835" elapsed="0.019027"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:20.055594" level="INFO">Typing text 'testuser_invalidphone' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:20.224408" level="INFO">Typing text 'testuser_invalidphone' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>testuser_invalidphone</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:20.055150" elapsed="0.138160"/>
+<status status="PASS" start="2025-10-19T14:55:20.224125" elapsed="0.117159"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:20.193919" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:20.342217" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:20.193593" elapsed="0.094156"/>
+<status status="PASS" start="2025-10-19T14:55:20.341670" elapsed="0.103273"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:20.288265" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:20.445745" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:20.287990" elapsed="0.135288"/>
+<status status="PASS" start="2025-10-19T14:55:20.445320" elapsed="0.135025"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:20.423993" level="INFO">Typing text 'testinvalidphone@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:20.580931" level="INFO">Typing text 'testinvalidphone@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>testinvalidphone@example.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:20.423589" elapsed="0.205122"/>
+<status status="PASS" start="2025-10-19T14:55:20.580576" elapsed="0.172676"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:20.629928" level="INFO">Typing text 'abcdefghij' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:20.754122" level="INFO">Typing text 'abcdefghij' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>${invalid_phone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:20.629135" elapsed="0.136293"/>
+<status status="PASS" start="2025-10-19T14:55:20.753598" elapsed="0.111139"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:20.766449" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:20.865448" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:20.765871" elapsed="0.118243"/>
+<status status="PASS" start="2025-10-19T14:55:20.865069" elapsed="0.110161"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:20.884661" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:20.975814" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:20.884369" elapsed="0.389358"/>
+<status status="PASS" start="2025-10-19T14:55:20.975508" elapsed="0.140506"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:22.274454" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:22.117068" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:21.274029" elapsed="1.000577"/>
+<status status="PASS" start="2025-10-19T14:55:21.116325" elapsed="1.000932"/>
 </kw>
 <arg>abcdefghij</arg>
 <doc>Register with invalid phone number</doc>
-<status status="PASS" start="2025-10-18T15:11:20.015554" elapsed="2.259196"/>
+<status status="PASS" start="2025-10-19T14:55:20.204195" elapsed="1.913385"/>
 </kw>
 <kw name="Verify Registration Behavior" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:22.692062" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_6.png"&gt;&lt;img src="registration_behavior_6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:22.495179" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_6.png"&gt;&lt;img src="registration_behavior_6.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_behavior_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:22.275611" elapsed="0.416774"/>
+<status status="PASS" start="2025-10-19T14:55:22.118826" elapsed="0.376503"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:22.698369" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:22.501928" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:22.692664" elapsed="0.005785"/>
+<status status="PASS" start="2025-10-19T14:55:22.495542" elapsed="0.006452"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-10-18T15:11:22.698987" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:22.502559" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
 <arg>Current URL: ${current_url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-10-18T15:11:22.698707" elapsed="0.000355"/>
+<status status="PASS" start="2025-10-19T14:55:22.502216" elapsed="0.000471"/>
 </kw>
 <doc>Verify registration behavior and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:22.275203" elapsed="0.423972"/>
+<status status="PASS" start="2025-10-19T14:55:22.118280" elapsed="0.384687"/>
 </kw>
 <doc>Test registration with non-numeric phone number</doc>
-<status status="PASS" start="2025-10-18T15:11:19.930785" elapsed="2.768762"/>
+<status status="PASS" start="2025-10-19T14:55:20.113019" elapsed="2.390618"/>
 </test>
 <test id="s1-t18" name="Test Login With Wrong Password" line="115">
 <kw name="Go To Staff Login Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:22.701570" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
+<msg time="2025-10-19T14:55:22.505741" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
 <arg>${URL}/stafflogin/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:22.701402" elapsed="0.085194"/>
+<status status="PASS" start="2025-10-19T14:55:22.505535" elapsed="0.089244"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:22.959389" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-18T15:11:22.959632" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
+<msg time="2025-10-19T14:55:22.754354" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:22.754765" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
 <arg>Staff Login</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-10-18T15:11:22.787028" elapsed="0.173690">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:22.595171" elapsed="0.161828">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <doc>Navigate to staff login page</doc>
-<status status="FAIL" start="2025-10-18T15:11:22.701090" elapsed="0.259918">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:22.505186" elapsed="0.252200">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <kw name="Login With Wrong Credentials" owner="LoginRegistrationTest">
 <arg>${USERNAME}</arg>
 <arg>wrongpassword123</arg>
 <doc>Login with incorrect credentials</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:22.961874" elapsed="0.000144"/>
+<status status="NOT RUN" start="2025-10-19T14:55:22.757973" elapsed="0.000100"/>
 </kw>
 <kw name="Verify Login Fails" owner="LoginRegistrationTest">
 <doc>Verify that login did not succeed and capture screenshot</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:22.962541" elapsed="0.000065"/>
+<status status="NOT RUN" start="2025-10-19T14:55:22.758500" elapsed="0.000055"/>
 </kw>
 <doc>Test login with incorrect password</doc>
-<status status="FAIL" start="2025-10-18T15:11:22.700411" elapsed="0.262568">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:22.504447" elapsed="0.254431">Page should have contained text 'Staff Login' but did not.</status>
 </test>
 <test id="s1-t19" name="Test Login With Non-Existent User" line="121">
 <kw name="Go To Staff Login Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:22.966319" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
+<msg time="2025-10-19T14:55:22.761412" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
 <arg>${URL}/stafflogin/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:22.966035" elapsed="0.074021"/>
+<status status="PASS" start="2025-10-19T14:55:22.761041" elapsed="0.075948"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:23.224610" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-18T15:11:23.224913" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
+<msg time="2025-10-19T14:55:22.997621" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:22.997886" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
 <arg>Staff Login</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-10-18T15:11:23.040476" elapsed="0.185834">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:22.837259" elapsed="0.162132">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <doc>Navigate to staff login page</doc>
-<status status="FAIL" start="2025-10-18T15:11:22.965355" elapsed="0.261308">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:22.760624" elapsed="0.239073">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <kw name="Login With Wrong Credentials" owner="LoginRegistrationTest">
 <arg>nonexistentuser999</arg>
 <arg>somepassword</arg>
 <doc>Login with incorrect credentials</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:23.227365" elapsed="0.000095"/>
+<status status="NOT RUN" start="2025-10-19T14:55:23.000551" elapsed="0.000119"/>
 </kw>
 <kw name="Verify Login Fails" owner="LoginRegistrationTest">
 <doc>Verify that login did not succeed and capture screenshot</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:23.227906" elapsed="0.000065"/>
+<status status="NOT RUN" start="2025-10-19T14:55:23.001238" elapsed="0.000100"/>
 </kw>
 <doc>Test login with non-existent username</doc>
-<status status="FAIL" start="2025-10-18T15:11:22.964013" elapsed="0.264574">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:22.759877" elapsed="0.241850">Page should have contained text 'Staff Login' but did not.</status>
 </test>
 <test id="s1-t20" name="Test Registration With Duplicate Username" line="128">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:23.230872" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:23.004541" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.230672" elapsed="0.084283"/>
+<status status="PASS" start="2025-10-19T14:55:23.004212" elapsed="0.083111"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:23.338113" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:23.105408" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.315361" elapsed="0.022909"/>
+<status status="PASS" start="2025-10-19T14:55:23.087619" elapsed="0.017935"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:23.230330" elapsed="0.108106"/>
+<status status="PASS" start="2025-10-19T14:55:23.003367" elapsed="0.102354"/>
 </kw>
 <kw name="Register Duplicate User" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.339520" elapsed="0.019467"/>
+<status status="PASS" start="2025-10-19T14:55:23.106924" elapsed="0.019979"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:23.360175" level="INFO">Typing text 'fslkfjksl' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:23.127737" level="INFO">Typing text 'fslkfjksl' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.359760" elapsed="0.103025"/>
+<status status="PASS" start="2025-10-19T14:55:23.127474" elapsed="0.107990"/>
 </kw>
 <arg>'${duplicate_field}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -1855,29 +1857,29 @@
 <arg>name=uname</arg>
 <arg>testuser_dup_${duplicate_field}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.359304" elapsed="0.103768"/>
+<status status="PASS" start="2025-10-19T14:55:23.127141" elapsed="0.108593"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:23.463759" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:23.236563" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.463397" elapsed="0.112889"/>
+<status status="PASS" start="2025-10-19T14:55:23.236176" elapsed="0.097144"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:23.576964" level="INFO">Typing text 'Duplicate' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:23.334546" level="INFO">Typing text 'Duplicate' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>Duplicate</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.576602" elapsed="0.128880"/>
+<status status="PASS" start="2025-10-19T14:55:23.333973" elapsed="0.130554"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:23.706907" level="INFO">Typing text 'testdup_username@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:23.465387" level="INFO">Typing text 'testdup_username@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>testdup_${duplicate_field}@example.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.706297" elapsed="0.175108"/>
+<status status="PASS" start="2025-10-19T14:55:23.465113" elapsed="0.136771"/>
 </kw>
 <arg>'${duplicate_field}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -1888,107 +1890,107 @@
 <arg>name=email</arg>
 <arg>testdup_${duplicate_field}@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.705803" elapsed="0.175857"/>
+<status status="PASS" start="2025-10-19T14:55:23.464767" elapsed="0.137484"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:23.882614" level="INFO">Typing text '9876543210' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:23.603668" level="INFO">Typing text '9876543210' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>9876543210</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:23.882089" elapsed="0.127215"/>
+<status status="PASS" start="2025-10-19T14:55:23.603167" elapsed="0.107402"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:24.009875" level="INFO">Typing text 'testpass456' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:23.711265" level="INFO">Typing text 'testpass456' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass456</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:24.009561" elapsed="0.110512"/>
+<status status="PASS" start="2025-10-19T14:55:23.710936" elapsed="0.100939"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:24.120785" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:23.812410" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:24.120400" elapsed="0.148592"/>
+<status status="PASS" start="2025-10-19T14:55:23.812131" elapsed="0.134803"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:25.269624" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:24.947831" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:24.269277" elapsed="1.000502"/>
+<status status="PASS" start="2025-10-19T14:55:23.947271" elapsed="1.000715"/>
 </kw>
 <arg>username</arg>
 <doc>Register with duplicate username or email</doc>
-<status status="PASS" start="2025-10-18T15:11:23.338983" elapsed="1.930943"/>
+<status status="PASS" start="2025-10-19T14:55:23.106297" elapsed="1.841832"/>
 </kw>
 <kw name="Verify Duplicate Registration Fails" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:25.663008" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="duplicate_registration_1.png"&gt;&lt;img src="duplicate_registration_1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:25.331310" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="duplicate_registration_3.png"&gt;&lt;img src="duplicate_registration_3.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>duplicate_registration_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:25.270801" elapsed="0.392449"/>
+<status status="PASS" start="2025-10-19T14:55:24.949665" elapsed="0.381848"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:25.668756" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:25.339279" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:25.663642" elapsed="0.005196"/>
+<status status="PASS" start="2025-10-19T14:55:25.331797" elapsed="0.007543"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.082702" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-18T15:11:26.083031" level="FAIL">Page should have contained text 'already exists' but did not.</msg>
+<msg time="2025-10-19T14:55:25.739021" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:25.739398" level="FAIL">Page should have contained text 'already exists' but did not.</msg>
 <arg>already exists</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-10-18T15:11:25.669371" elapsed="0.415427">Page should have contained text 'already exists' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:25.339897" elapsed="0.401015">Page should have contained text 'already exists' but did not.</status>
 </kw>
 <arg>Page Should Contain</arg>
 <arg>already exists</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-18T15:11:25.669111" elapsed="0.415946"/>
+<status status="PASS" start="2025-10-19T14:55:25.339556" elapsed="0.401680"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>dashboard</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.085398" elapsed="0.000440"/>
+<status status="PASS" start="2025-10-19T14:55:25.741612" elapsed="0.000511"/>
 </kw>
 <doc>Verify that duplicate registration is rejected and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:25.270404" elapsed="0.815645"/>
+<status status="PASS" start="2025-10-19T14:55:24.948924" elapsed="0.793452"/>
 </kw>
 <doc>Test registration with already registered username</doc>
-<status status="PASS" start="2025-10-18T15:11:23.229584" elapsed="2.856974"/>
+<status status="PASS" start="2025-10-19T14:55:23.002517" elapsed="2.740306"/>
 </test>
 <test id="s1-t21" name="Test Registration With Duplicate Email" line="134">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.089076" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:25.744601" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.088861" elapsed="0.061168"/>
+<status status="PASS" start="2025-10-19T14:55:25.744441" elapsed="0.065794"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.162669" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:25.829147" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.150383" elapsed="0.012410"/>
+<status status="PASS" start="2025-10-19T14:55:25.810681" elapsed="0.018605"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:26.088469" elapsed="0.074441"/>
+<status status="PASS" start="2025-10-19T14:55:25.744148" elapsed="0.085277"/>
 </kw>
 <kw name="Register Duplicate User" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.164392" elapsed="0.015758"/>
+<status status="PASS" start="2025-10-19T14:55:25.830645" elapsed="0.017008"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.182359" level="INFO">Typing text 'testuser_dup_email' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:25.848644" level="INFO">Typing text 'testuser_dup_email' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>testuser_dup_${duplicate_field}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.181614" elapsed="0.114919"/>
+<status status="PASS" start="2025-10-19T14:55:25.848327" elapsed="0.125021"/>
 </kw>
 <arg>'${duplicate_field}' == 'username'</arg>
 <arg>Input Text</arg>
@@ -1999,29 +2001,29 @@
 <arg>name=uname</arg>
 <arg>testuser_dup_${duplicate_field}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.180403" elapsed="0.116314"/>
+<status status="PASS" start="2025-10-19T14:55:25.847926" elapsed="0.125569"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.297357" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:25.974189" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.296998" elapsed="0.107909"/>
+<status status="PASS" start="2025-10-19T14:55:25.973800" elapsed="0.102395"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.405666" level="INFO">Typing text 'Duplicate' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:26.076950" level="INFO">Typing text 'Duplicate' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>Duplicate</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.405259" elapsed="0.129113"/>
+<status status="PASS" start="2025-10-19T14:55:26.076549" elapsed="0.135023"/>
 </kw>
 <kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.535760" level="INFO">Typing text 'fslkfjksl@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:26.212485" level="INFO">Typing text 'fslkfjksl@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.535260" elapsed="0.120638"/>
+<status status="PASS" start="2025-10-19T14:55:26.212200" elapsed="0.151669"/>
 </kw>
 <arg>'${duplicate_field}' == 'email'</arg>
 <arg>Input Text</arg>
@@ -2032,342 +2034,342 @@
 <arg>name=email</arg>
 <arg>testdup_${duplicate_field}@example.com</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.534691" elapsed="0.121353"/>
+<status status="PASS" start="2025-10-19T14:55:26.211825" elapsed="0.152208"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.656666" level="INFO">Typing text '9876543210' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:26.364610" level="INFO">Typing text '9876543210' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>9876543210</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.656383" elapsed="0.117970"/>
+<status status="PASS" start="2025-10-19T14:55:26.364294" elapsed="0.118494"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.775157" level="INFO">Typing text 'testpass456' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:26.483478" level="INFO">Typing text 'testpass456' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass456</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.774736" elapsed="0.130459"/>
+<status status="PASS" start="2025-10-19T14:55:26.483112" elapsed="0.123094"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:26.905795" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:26.606797" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:26.905477" elapsed="0.136629"/>
+<status status="PASS" start="2025-10-19T14:55:26.606503" elapsed="0.136587"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:28.043385" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:27.744612" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:27.042425" elapsed="1.001242"/>
+<status status="PASS" start="2025-10-19T14:55:26.743473" elapsed="1.001385"/>
 </kw>
 <arg>email</arg>
 <doc>Register with duplicate username or email</doc>
-<status status="PASS" start="2025-10-18T15:11:26.163512" elapsed="1.880412"/>
+<status status="PASS" start="2025-10-19T14:55:25.830010" elapsed="1.915141"/>
 </kw>
 <kw name="Verify Duplicate Registration Fails" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:28.443178" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="duplicate_registration_2.png"&gt;&lt;img src="duplicate_registration_2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:28.143003" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="duplicate_registration_4.png"&gt;&lt;img src="duplicate_registration_4.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>duplicate_registration_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:28.045563" elapsed="0.397806"/>
+<status status="PASS" start="2025-10-19T14:55:27.746480" elapsed="0.396715"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:28.449528" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:28.150663" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:28.443626" elapsed="0.005987"/>
+<status status="PASS" start="2025-10-19T14:55:28.143476" elapsed="0.007304"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" owner="BuiltIn">
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:28.869969" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-18T15:11:28.870187" level="FAIL">Page should have contained text 'already exists' but did not.</msg>
+<msg time="2025-10-19T14:55:28.559743" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:28.560022" level="FAIL">Page should have contained text 'already exists' but did not.</msg>
 <arg>already exists</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-10-18T15:11:28.451093" elapsed="0.419869">Page should have contained text 'already exists' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:28.151751" elapsed="0.409730">Page should have contained text 'already exists' but did not.</status>
 </kw>
 <arg>Page Should Contain</arg>
 <arg>already exists</arg>
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2025-10-18T15:11:28.449898" elapsed="0.421182"/>
+<status status="PASS" start="2025-10-19T14:55:28.151148" elapsed="0.410543"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>dashboard</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:28.871240" elapsed="0.000218"/>
+<status status="PASS" start="2025-10-19T14:55:28.561935" elapsed="0.000320"/>
 </kw>
 <doc>Verify that duplicate registration is rejected and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:28.044827" elapsed="0.826717"/>
+<status status="PASS" start="2025-10-19T14:55:27.746092" elapsed="0.816296"/>
 </kw>
 <doc>Test registration with already registered email</doc>
-<status status="PASS" start="2025-10-18T15:11:26.087513" elapsed="2.784517"/>
+<status status="PASS" start="2025-10-19T14:55:25.743498" elapsed="2.819366"/>
 </test>
 <test id="s1-t22" name="Test Registration With Whitespace In Fields" line="141">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:28.873778" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:28.566326" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:28.873624" elapsed="0.061862"/>
+<status status="PASS" start="2025-10-19T14:55:28.565802" elapsed="0.062767"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:28.952780" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:28.650374" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:28.935950" elapsed="0.016986"/>
+<status status="PASS" start="2025-10-19T14:55:28.628885" elapsed="0.021696"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:28.873362" elapsed="0.079716"/>
+<status status="PASS" start="2025-10-19T14:55:28.565233" elapsed="0.085520"/>
 </kw>
 <kw name="Register User With Whitespace" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:28.954866" elapsed="0.019705"/>
+<status status="PASS" start="2025-10-19T14:55:28.652253" elapsed="0.020031"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:28.975518" level="INFO">Typing text '  testuser  ' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:28.672947" level="INFO">Typing text '  testuser  ' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>${username_ws}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:28.974992" elapsed="0.103752"/>
+<status status="PASS" start="2025-10-19T14:55:28.672563" elapsed="0.112507"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:29.079413" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:28.785942" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:29.079049" elapsed="0.109809"/>
+<status status="PASS" start="2025-10-19T14:55:28.785456" elapsed="0.108292"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:29.189566" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:28.894599" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:29.189190" elapsed="0.125286"/>
+<status status="PASS" start="2025-10-19T14:55:28.894136" elapsed="0.139462"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:29.315049" level="INFO">Typing text '  test@email.com  ' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:29.034299" level="INFO">Typing text '  test@email.com  ' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${email_ws}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:29.314720" elapsed="0.129876"/>
+<status status="PASS" start="2025-10-19T14:55:29.033893" elapsed="0.140668"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:29.445097" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:29.175418" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:29.444830" elapsed="0.116984"/>
+<status status="PASS" start="2025-10-19T14:55:29.174918" elapsed="0.118448"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:29.562491" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:29.294473" level="INFO">Typing text 'testpass123' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>testpass123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:29.562130" elapsed="0.133417"/>
+<status status="PASS" start="2025-10-19T14:55:29.293820" elapsed="0.132780"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:29.696259" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:29.427298" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:29.695882" elapsed="0.131328"/>
+<status status="PASS" start="2025-10-19T14:55:29.426984" elapsed="0.137156"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:30.828520" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:30.564742" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:29.827522" elapsed="1.001259"/>
+<status status="PASS" start="2025-10-19T14:55:29.564387" elapsed="1.000516"/>
 </kw>
 <arg>${SPACE}${SPACE}testuser${SPACE}${SPACE}</arg>
 <arg>${SPACE}${SPACE}test@email.com${SPACE}${SPACE}</arg>
 <doc>Register with whitespace in fields</doc>
-<status status="PASS" start="2025-10-18T15:11:28.953652" elapsed="1.875557"/>
+<status status="PASS" start="2025-10-19T14:55:28.651364" elapsed="1.913683"/>
 </kw>
 <kw name="Verify Registration Behavior" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.222314" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_7.png"&gt;&lt;img src="registration_behavior_7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:30.932831" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_behavior_7.png"&gt;&lt;img src="registration_behavior_7.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_behavior_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:30.830788" elapsed="0.391663"/>
+<status status="PASS" start="2025-10-19T14:55:30.565933" elapsed="0.367041"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.227929" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:30.941149" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.222668" elapsed="0.005344"/>
+<status status="PASS" start="2025-10-19T14:55:30.933213" elapsed="0.008034"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-10-18T15:11:31.228597" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:30.941968" level="INFO">Current URL: http://localhost:8000/staffsignup/</msg>
 <arg>Current URL: ${current_url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.228296" elapsed="0.000394"/>
+<status status="PASS" start="2025-10-19T14:55:30.941611" elapsed="0.000483"/>
 </kw>
 <doc>Verify registration behavior and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:30.830112" elapsed="0.398721"/>
+<status status="PASS" start="2025-10-19T14:55:30.565532" elapsed="0.376846"/>
 </kw>
 <doc>Test registration with leading/trailing whitespaces</doc>
-<status status="PASS" start="2025-10-18T15:11:28.872768" elapsed="2.356386"/>
+<status status="PASS" start="2025-10-19T14:55:28.564005" elapsed="2.378964"/>
 </test>
 <test id="s1-t23" name="Test Password With Only Spaces" line="147">
 <kw name="Go To Staff Signup Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.231056" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
+<msg time="2025-10-19T14:55:30.944910" level="INFO">Opening url 'http://localhost:8000/staffsignup/'</msg>
 <arg>${URL}/staffsignup/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.230862" elapsed="0.057865"/>
+<status status="PASS" start="2025-10-19T14:55:30.944739" elapsed="0.076292"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.302073" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
+<msg time="2025-10-19T14:55:31.057265" level="INFO">Current page contains text 'STAFF SIGNUP'.</msg>
 <arg>STAFF SIGNUP</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.289038" elapsed="0.013438"/>
+<status status="PASS" start="2025-10-19T14:55:31.021430" elapsed="0.035989"/>
 </kw>
 <doc>Navigate to staff signup page</doc>
-<status status="PASS" start="2025-10-18T15:11:31.230527" elapsed="0.072179"/>
+<status status="PASS" start="2025-10-19T14:55:30.944441" elapsed="0.113151"/>
 </kw>
 <kw name="Register User With Space Password" owner="LoginRegistrationTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>name=uname</arg>
 <arg>timeout=5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.304845" elapsed="0.018473"/>
+<status status="PASS" start="2025-10-19T14:55:31.059207" elapsed="0.041801"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.323925" level="INFO">Typing text 'testuser_spacepass' into text field 'name=uname'.</msg>
+<msg time="2025-10-19T14:55:31.101796" level="INFO">Typing text 'testuser_spacepass' into text field 'name=uname'.</msg>
 <arg>name=uname</arg>
 <arg>testuser_spacepass</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.323602" elapsed="0.101769"/>
+<status status="PASS" start="2025-10-19T14:55:31.101358" elapsed="0.138906"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.425863" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
+<msg time="2025-10-19T14:55:31.241082" level="INFO">Typing text 'Test' into text field 'name=fname'.</msg>
 <arg>name=fname</arg>
 <arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.425603" elapsed="0.100296"/>
+<status status="PASS" start="2025-10-19T14:55:31.240661" elapsed="0.108097"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.526619" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
+<msg time="2025-10-19T14:55:31.349312" level="INFO">Typing text 'User' into text field 'name=lname'.</msg>
 <arg>name=lname</arg>
 <arg>User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.526242" elapsed="0.122831"/>
+<status status="PASS" start="2025-10-19T14:55:31.349015" elapsed="0.133884"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.649772" level="INFO">Typing text 'testspacepass@example.com' into text field 'name=email'.</msg>
+<msg time="2025-10-19T14:55:31.483431" level="INFO">Typing text 'testspacepass@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>testspacepass@example.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.649397" elapsed="0.134178"/>
+<status status="PASS" start="2025-10-19T14:55:31.483146" elapsed="0.162562"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.784131" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
+<msg time="2025-10-19T14:55:31.646263" level="INFO">Typing text '1234567890' into text field 'name=phone'.</msg>
 <arg>name=phone</arg>
 <arg>1234567890</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.783836" elapsed="0.123645"/>
+<status status="PASS" start="2025-10-19T14:55:31.645965" elapsed="0.112231"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:31.908332" level="INFO">Typing text '     ' into text field 'name=password'.</msg>
+<msg time="2025-10-19T14:55:31.758953" level="INFO">Typing text '     ' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>${SPACE}${SPACE}${SPACE}${SPACE}${SPACE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:31.907775" elapsed="0.114510"/>
+<status status="PASS" start="2025-10-19T14:55:31.758454" elapsed="0.116106"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:32.022969" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
+<msg time="2025-10-19T14:55:31.875117" level="INFO">Clicking button 'xpath=//input[@value='Create']'.</msg>
 <arg>xpath=//input[@value='Create']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-18T15:11:32.022604" elapsed="0.135994"/>
+<status status="PASS" start="2025-10-19T14:55:31.874807" elapsed="0.145171"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-18T15:11:33.159511" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-19T14:55:33.021973" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-18T15:11:32.158887" elapsed="1.000900"/>
+<status status="PASS" start="2025-10-19T14:55:32.020801" elapsed="1.001433"/>
 </kw>
 <doc>Register with password containing only spaces</doc>
-<status status="PASS" start="2025-10-18T15:11:31.303974" elapsed="1.856102"/>
+<status status="PASS" start="2025-10-19T14:55:31.058608" elapsed="1.963864"/>
 </kw>
 <kw name="Verify Registration Fails" owner="LoginRegistrationTest">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:33.538137" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_6.png"&gt;&lt;img src="registration_failure_6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:33.398590" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="registration_failure_6.png"&gt;&lt;img src="registration_failure_6.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>registration_failure_{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-10-18T15:11:33.161697" elapsed="0.376652"/>
+<status status="PASS" start="2025-10-19T14:55:33.023876" elapsed="0.374917"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:33.544616" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
+<msg time="2025-10-19T14:55:33.406108" level="INFO">${current_url} = http://localhost:8000/staffsignup/</msg>
 <var>${current_url}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2025-10-18T15:11:33.538689" elapsed="0.005984"/>
+<status status="PASS" start="2025-10-19T14:55:33.399129" elapsed="0.007047"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>dashboard</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:33.544857" elapsed="0.000202"/>
+<status status="PASS" start="2025-10-19T14:55:33.406402" elapsed="0.000263"/>
 </kw>
 <kw name="Should Not Contain" owner="BuiltIn">
 <arg>${current_url}</arg>
 <arg>stafflogin</arg>
 <doc>Fails if ``container`` contains ``item`` one or more times.</doc>
-<status status="PASS" start="2025-10-18T15:11:33.545173" elapsed="0.000149"/>
+<status status="PASS" start="2025-10-19T14:55:33.406834" elapsed="0.000272"/>
 </kw>
 <doc>Verify that registration did not succeed and capture screenshot</doc>
-<status status="PASS" start="2025-10-18T15:11:33.160991" elapsed="0.384420"/>
+<status status="PASS" start="2025-10-19T14:55:33.023285" elapsed="0.383942"/>
 </kw>
 <doc>Test registration with password containing only spaces</doc>
-<status status="PASS" start="2025-10-18T15:11:31.229812" elapsed="2.316048"/>
+<status status="PASS" start="2025-10-19T14:55:30.943803" elapsed="2.463948"/>
 </test>
 <test id="s1-t24" name="Test Case Sensitivity In Login" line="153">
 <kw name="Go To Staff Login Page" owner="LoginRegistrationTest">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:33.547470" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
+<msg time="2025-10-19T14:55:33.409961" level="INFO">Opening url 'http://localhost:8000/stafflogin/'</msg>
 <arg>${URL}/stafflogin/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-10-18T15:11:33.547321" elapsed="0.088435"/>
+<status status="PASS" start="2025-10-19T14:55:33.409704" elapsed="0.087113"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-18T15:11:33.801418" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-18T15:11:33.801706" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
+<msg time="2025-10-19T14:55:33.656504" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-19T14:55:33.656747" level="FAIL">Page should have contained text 'Staff Login' but did not.</msg>
 <arg>Staff Login</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="FAIL" start="2025-10-18T15:11:33.636329" elapsed="0.166536">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:33.497230" elapsed="0.161431">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <doc>Navigate to staff login page</doc>
-<status status="FAIL" start="2025-10-18T15:11:33.547058" elapsed="0.256078">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:33.409257" elapsed="0.249738">Page should have contained text 'Staff Login' but did not.</status>
 </kw>
 <kw name="Login With Different Case" owner="LoginRegistrationTest">
 <arg>UNIQUETESTUSER</arg>
 <arg>${PASSWORD}</arg>
 <doc>Login with different case username</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:33.803593" elapsed="0.000084"/>
+<status status="NOT RUN" start="2025-10-19T14:55:33.659731" elapsed="0.000133"/>
 </kw>
 <kw name="Verify Login Behavior" owner="LoginRegistrationTest">
 <doc>Verify login behavior and capture screenshot</doc>
-<status status="NOT RUN" start="2025-10-18T15:11:33.804098" elapsed="0.000077"/>
+<status status="NOT RUN" start="2025-10-19T14:55:33.660901" elapsed="0.000094"/>
 </kw>
 <doc>Test login username case sensitivity</doc>
-<status status="FAIL" start="2025-10-18T15:11:33.546513" elapsed="0.258050">Page should have contained text 'Staff Login' but did not.</status>
+<status status="FAIL" start="2025-10-19T14:55:33.408464" elapsed="0.252966">Page should have contained text 'Staff Login' but did not.</status>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-18T15:11:33.805824" elapsed="2.346567"/>
+<status status="PASS" start="2025-10-19T14:55:33.662947" elapsed="2.435522"/>
 </kw>
 <doc>(s396426 Amrit Niure) Automated Test for Login and Registration Functionality</doc>
-<status status="FAIL" start="2025-10-18T15:10:48.563660" elapsed="47.588875"/>
+<status status="FAIL" start="2025-10-19T14:54:40.421775" elapsed="55.676900"/>
 </suite>
 <statistics>
 <total>
-<stat pass="17" fail="7" skip="0">All Tests</stat>
+<stat pass="16" fail="8" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="MainLoginRegistration" id="s1" pass="17" fail="7" skip="0">MainLoginRegistration</stat>
+<stat name="MainLoginRegistration" id="s1" pass="16" fail="8" skip="0">MainLoginRegistration</stat>
 </suite>
 </statistics>
 <errors>
